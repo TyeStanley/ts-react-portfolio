@@ -1,38 +1,163 @@
+body {
+  background-image: url("./assets/images/beachBackground.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#home {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home {
+  display: block;
+  max-width: 95%;
+  margin-top: 25vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home .home-dev {
+  margin-bottom: 10px;
+}
+
+.home .home-dev p {
+  color: #000;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.home .home-name h1 {
+  color: #000;
+  font-size: 2.6rem;
+  font-weight: 450;
+}
+
+.home .underline {
+  height: 4px;
+  width: 200px;
+  background: #000;
+  margin: 0 auto;
+}
+
+.home .home-buttons {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 320px;
+  max-width: 98%;
+  margin: 25px auto;
+}
+
+.home .home-buttons .home-button {
+  border: 1px solid #000;
+  background: transparent;
+  width: 90px;
+  height: 25px;
+  font-size: .8rem;
+  border-radius: 5px;
+  margin: 5px;
+  padding-top: 5px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.hidden-button {
+  opacity: 0;
+}
+
+.home .home-social {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 200px;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.home .home-social .social-icon {
+  height: 35px;
+  width: 35px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid #000;
+  cursor: pointer;
+  color: #000;
+  padding: 7px 5px 0px 4px;
+  animation: rotatewords 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  opacity: 0;
+  transition: .3s ease-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Mobile First Approach */
+@media(min-width: 411px) {
+  .home .home-dev {
+    margin-bottom: 27.5px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .home .home-dev p {
+    font-size: 1.5rem;
+  }
+  .home .home-name h1 {
+    font-size: 3rem;
+  }
+
+  .home .underline {
+    height: 4.2px;
+    width: 225px;
+  }
+
+  .home .home-buttons {
+    width: 420px;
+    max-width: 98%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .home .home-buttons .home-button {
+    width: 100px;
+    height: 30px;
+    font-size: 1rem;
+    margin: 15px auto;
+    padding-top: 5px;
+  }
+  .hidden-button {
+    opacity: 0;
+  }
+
+  .home .home-social {
+    width: 275px;
+  }
+
+  .home .home-social .social-icon {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@keyframes rotatewords {
+  0% {
+    opacity: 0;
+    transform: rotatex(-180deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotatex(180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotatex(1turn);
   }
 }
