@@ -1,11 +1,11 @@
 import "./App.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core'
-  import { fab } from '@fortawesome/free-brands-svg-icons'
-  import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { fab, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import {  faUser, faBriefcase, faGraduationCap, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-  library.add(fab, faCheckSquare, faCoffee)
+  // library.add(fab)
 
 
 function App() {
@@ -17,36 +17,47 @@ function App() {
       <div>
 
         <section id="home">
-          <div class="home">
+          <div className="home">
 
-            <div class="home-dev">
+            <div className="home-dev">
               <p>Full-Stack Developer</p>
             </div>
 
-            <div class="home-name">
+            <div className="home-name">
               <h1>TYE STANLEY</h1>
             </div>
 
-            <div class="underline"></div>
+            <div className="underline"></div>
 
-            <div class="home-buttons">
-              <div class="home-button pointer">About</div>
-              <div class="home-button pointer">Portfolio</div>
-              <div class="home-button pointer">Resume</div>
-              <div class="home-button hidden-button"></div>
-              <div class="home-button pointer">Contact</div>
-              
+            <div className="home-buttons">
+              <div className="home-button pointer">
+                <FontAwesomeIcon icon={faUser} className="fa-fw" />
+                {' '}About
+              </div>
+              <div className="home-button pointer">
+                <FontAwesomeIcon icon={faBriefcase} className="fa-fw" />
+                {' '}Portfolio
+              </div>
+              <div className="home-button pointer">
+                <FontAwesomeIcon icon={faGraduationCap} className="fa-fw" />
+                {' '}Resume
+              </div>
+              <div className="home-button hidden-button"></div>
+              <div className="home-button pointer">
+                <FontAwesomeIcon icon={faEnvelope} className="fa-fw" />
+                {' '}Contact
+              </div>
             </div>
 
-            <div class="home-social">
-              <div class="social-icon">
-                <FontAwesomeIcon icon="fab fa-linkedin-in" className="m-1 fa-2xl"></FontAwesomeIcon>
+            <div className="home-social">
+              <div className="social-icon">
+                <FontAwesomeIcon icon={faLinkedinIn} className="fa-2xl" />
               </div>
-                <div class="social-icon">
-                <FontAwesomeIcon icon={faGithub} className="m-1 fa-2xl"></FontAwesomeIcon>
-                </div>
-              <div class="social-icon">
-                <FontAwesomeIcon icon={faStackOverflow} className="m-1 fa-2xl"></FontAwesomeIcon>
+              <div className="social-icon">
+                <FontAwesomeIcon icon={faGithub} className="fa-2xl" />
+              </div>
+              <div className="social-icon">
+                <FontAwesomeIcon icon={faStackOverflow} className="fa-2xl" />
               </div>
             </div>
 
