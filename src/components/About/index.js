@@ -4,9 +4,44 @@ import me from '../../assets/images/me.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+import Button from '@mui/material/Button';
+
 
 function About() {
+  // for the modal for front-end and back-end button
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
 
+  const [open2, setOpen2] = React.useState(false);
+  const handleOpen2 = () => {
+    setOpen2(true);
+  };
+  const handleClose2 = () => {
+    setOpen2(false);
+  };
+
+  const style = {
+    position: 'absolute',
+    height: '100%',
+    width: '100%',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    bgcolor: 'white',
+    border: '2px solid #000',
+    textAlign: 'center',
+    pt: 50,
+    px: 7,
+    pb: 4,
+    opacity: 0.98,
+  };
 
   return (
     <section id="about" className="about">
@@ -24,11 +59,10 @@ function About() {
         <div className="navbar">
 
           <div className="bigscreen-nav">
-            <a href="https://google.com">Home</a>
-            <a href="https://google.com">About</a>
-            <a href="https://google.com">Portfolio</a>
-            <a href="https://google.com">Resume</a>
-            <a href="https://google.com">Contact</a>
+            <Link to="/about">About</Link>
+            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/resume">Resume</Link>
+            <Link to="/contact">Contact</Link>
           </div>
 
           <div className="smallscreen-nav">
@@ -63,38 +97,107 @@ function About() {
 
         <div className="about-buttons">
 
-          <button 
-            class=""
-            tabindex="0"
-            type="button"
+          <Button onClick={handleOpen}>Front-End</Button>
+          <Modal
+            hideBackdrop
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="modal-title"
+            aria-describedby="modal-description"
           >
-            <span className="">Front-End</span>
-          </button>
+            <Box sx={ style } className="modal-content">
 
-          <button 
-            class=""
-            tabindex="0"
-            type="button"
+              <div className="frontend">
+
+                <h1 className="modal-title">Front-End</h1>
+
+                <div className="about-underline"></div>
+
+                <div className="frontend-description">
+                  <strong>React, jQuery, Material UI, Bootstrap, CSS</strong>
+                </div>
+
+                <p>
+                  Established and driven software engineer applying Full Stack 
+                  Developer background with a strong drive to improve/learn skill 
+                  sets in relation to creating full-fledged websites with high 
+                  performance and strong optimization. I have graduated from the 
+                  Bootcamp program and obtained my certificate in full stack web 
+                  development from UT University.
+                </p>
+
+                <div className="close-box">
+                  <Button 
+                    onClick={handleClose}
+                    sx={{ 
+                      color: '#000', 
+                      bgcolor: '#FDFD96', 
+                      border: '1px solid #000'
+                    
+                    }}
+                    className="close-icon"
+                  >
+                    <strong>close</strong>
+                  </Button>
+                </div>
+
+              </div>
+
+            </Box>
+          </Modal>
+
+          <Button onClick={handleOpen2}>Back-End</Button>
+          <Modal
+            hideBackdrop
+            open={open2}
+            onClose={handleClose2}
+            aria-labelledby="modal-title"
+            aria-describedby="modal-description"
           >
-            <span className="">Back-End</span>
-          </button>
+            <Box sx={ style } className="modal-content">
+
+              <div className="frontend">
+
+                <h1 className="modal-title">Back-End</h1>
+
+                <div className="about-underline"></div>
+
+                <div className="frontend-description">
+                  <strong>Node.js, Express, MongoDB, mySQL, REST, GraphQL</strong>
+                </div>
+
+                <p>
+                  Established and driven software engineer applying Full Stack 
+                  Developer background with a strong drive to improve/learn skill 
+                  sets in relation to creating full-fledged websites with high 
+                  performance and strong optimization. I have graduated from the 
+                  Bootcamp program and obtained my certificate in full stack web 
+                  development from UT University.
+                </p>
+
+                <div className="close-box">
+                  <Button 
+                    onClick={handleClose2}
+                    sx={{ 
+                      color: '#000', 
+                      bgcolor: '#FDFD96', 
+                      border: '1px solid #000',
+                    }}
+                    className="close-icon"
+                  >
+                    <strong>close</strong>
+                  </Button>
+                </div>
+
+              </div>
+
+            </Box>
+          </Modal>
 
         </div>
 
       </div>
 
-      <div className="backdrop">
-        <div className="backnav">
-          <div className="navigator">
-            <ul>
-              <li>About</li>
-              <li>Portfolio</li>
-              <li>Resume</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </section>
   )
 }
