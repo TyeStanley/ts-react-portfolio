@@ -10,7 +10,7 @@ import Button from '@mui/material/Button';
 
 
 function About() {
-  // for the modal for front-end and back-end button
+  // Front-end button modal
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -18,7 +18,7 @@ function About() {
   const handleClose = () => {
     setOpen(false);
   };
-
+  // Back-end button modal
   const [open2, setOpen2] = React.useState(false);
   const handleOpen2 = () => {
     setOpen2(true);
@@ -27,6 +27,30 @@ function About() {
     setOpen2(false);
   };
 
+  const [navMenu, setNavMenu] = React.useState(false);
+  const openMenu = () => {
+    const menu = document.querySelector('.smallscreen-nav');
+    const backdrop = document.querySelector('.backdrop');
+    const backnav = document.querySelector('.backnav');
+
+    const homeIcon = document.querySelector('.homeicon');
+
+    if (!navMenu) {
+      setNavMenu(true);
+      menu.classList.add('open');
+      backdrop.classList.add('backopen');
+      backnav.classList.add('backnavopen');
+      homeIcon.classList.add('openIcon');
+    } else {
+      setNavMenu(false);
+      menu.classList.remove('open');
+      backdrop.classList.remove('backopen');
+      backnav.classList.remove('backnavopen');
+      homeIcon.classList.remove('openIcon');
+    }
+  }
+
+  // style for modal
   const style = {
     position: 'absolute',
     height: '100%',
@@ -41,6 +65,7 @@ function About() {
     px: 7,
     pb: 4,
     opacity: 0.98,
+    
   };
 
   return (
@@ -65,7 +90,7 @@ function About() {
             <Link to="/contact">Contact</Link>
           </div>
 
-          <div className="smallscreen-nav">
+          <div className="smallscreen-nav" onClick={openMenu}>
             <span></span>
             <span></span>
             <span></span>
@@ -196,6 +221,17 @@ function About() {
 
         </div>
 
+      </div>
+
+      <div className="backdrop">
+        <div className="backnav">
+          <div className="navigator">
+              <Link class="navItem" to="/about">About</Link>
+              <Link class="navItem" to="/portfolio">Portfolio</Link>
+              <Link class="navItem" to="/resume">Resume</Link>
+              <Link class="navItem" to="/contact">Contact</Link> 
+          </div>
+        </div>
       </div>
 
     </section>
