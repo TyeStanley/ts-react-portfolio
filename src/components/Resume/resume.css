@@ -1,0 +1,255 @@
+.resume {
+  width: 98%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+}
+
+.resume .content-nav {
+  display: flex;
+  position: relative;
+  margin-bottom: -5px;
+  z-index: 200;
+  opacity: 0;
+  animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  animation-delay: .7s;
+}
+
+.resume .content-nav h1 {
+  font-size: 2rem;
+}
+
+.resume .content-nav .homeicon {
+  width: 50px;
+  opacity: 1;
+  /* transform: scale(0); */
+}
+
+.resume .content-nav .homeicon .divIcon {
+  font-size: 2rem;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: #FDFD96;
+}
+.resume .content-nav .homeicon.openIcon .divIcon {
+  color: #000;
+  transition: .5s ease-in-out;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.navbar {
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.navbar .bigscreen-nav {
+  display: none;
+}
+
+.navbar a {
+  margin: 5px;
+  cursor: pointer;
+}
+
+
+/* mobile nav bar settings */
+.navbar .smallscreen-nav, .navbar .smallscreen-nav span {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.navbar .smallscreen-nav {
+  position: relative;
+  z-index: 1000;
+  width: 35px;
+  height: 25px;
+  margin-right: 10px;
+  margin-top: 10px;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.navbar .smallscreen-nav span {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #FDFD96;
+  border-radius: 5px;
+  left: 0;
+  transition: .25s ease-in-out;
+}
+/* This is for the mobile menu dashes */
+.navbar .smallscreen-nav span:first-child {
+  top: 0;
+}
+.navbar .smallscreen-nav span:nth-child(2),
+.navbar .smallscreen-nav span:nth-child(3) {
+  top: 10px;
+}
+.navbar .smallscreen-nav span:nth-child(4) {
+  top: 20px;
+}
+
+/* When mobile nav is Open */
+.navbar .smallscreen-nav.open span:first-child {
+  top: 10px;
+  width: 0;
+  left: 50%;
+}
+.navbar .smallscreen-nav.open span:nth-child(2) {
+  transform: rotate(45deg);
+  background-color: #000;
+}
+.navbar .smallscreen-nav.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  background-color: #000;
+}
+.navbar .smallscreen-nav.open span:nth-child(4) {
+  top: 10px;
+  width: 0;
+  left: 50%;
+}
+
+/* backdrop mobile menu */
+.backdrop, .backdrop.backopen {
+  transition: .3s ease-in;
+}
+.backdrop {
+  background: hsla(0,0%,100%,.95);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+  opacity: 0;
+}
+.backdrop .backnav {
+  display: block;
+  color: #000;
+}
+.backdrop .backnav .navigator {
+  margin-top: 150px;
+  font-size: 3rem;
+  font-weight: 700;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: .5s ease-out;
+}
+.backdrop .backnav .navigator .navItem {
+  cursor: pointer;
+  margin: 25px auto;
+  width: 250px;
+  background: transparent;
+  opacity: 0;
+  transition: .5s ease-in-out;
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+/* Shows the back drop for mobile menu */ 
+.backdrop.backopen {
+  z-index: 100;
+  opacity: 1;
+}
+.backdrop .backnav.backnavopen .navigator {
+  transform: translateX(0);
+  opacity: 1;
+  transition: .5s ease-out;
+}
+.backdrop .backnav.backnavopen .navigator .navItem {
+  cursor: pointer;
+  margin: 25px auto;
+  width: 250px;
+  opacity: 1;
+  border: 1px solid rgba(0 , 0, 0, .2);
+  background: #fff;
+  transition: .5s ease-in-out;
+  color: #000;
+}
+/* end of mobile nav */
+
+
+
+@media(min-width: 768px) {
+  .resume {
+    width: 1200px;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .resume .content-nav {
+    margin-bottom: -15px;
+    animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  }
+  .resume .content-nav h1 {
+    font-size: 3rem;
+  }
+  .resume .content-nav .homeicon .divIcon {
+    margin-top: 17px;
+  }
+  .spacer {
+    flex-grow: 1;
+  }
+  .navbar {
+    margin-top: 25px;
+  }
+  .navbar .bigscreen-nav {
+    display: block;
+  }
+  .navbar .bigscreen-nav a {
+    text-decoration: none;
+    color:#000;
+  }
+  .navbar .bigscreen-nav a:hover {
+    color: #FDFD96;
+  }
+  .navbar .smallscreen-nav {
+    display: none;
+  }
+  
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes underline {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  75% {
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes closeicon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

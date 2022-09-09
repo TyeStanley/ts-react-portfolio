@@ -143,12 +143,10 @@ function About() {
                 </div>
 
                 <p>
-                  Established and driven software engineer applying Full Stack 
-                  Developer background with a strong drive to improve/learn skill 
-                  sets in relation to creating full-fledged websites with high 
-                  performance and strong optimization. I have graduated from the 
-                  Bootcamp program and obtained my certificate in full stack web 
-                  development from UT University.
+                  I am a Full-Stack Developer, who focuses on the MERN Stack.
+                  React is my favorite framework for designing because of its
+                  seperation of concerns and efficiency it provides. I'm a fan of
+                  performance and optimization to make sites run great!
                 </p>
 
                 <div className="close-box">
@@ -192,12 +190,11 @@ function About() {
                 </div>
 
                 <p>
-                  Established and driven software engineer applying Full Stack 
-                  Developer background with a strong drive to improve/learn skill 
-                  sets in relation to creating full-fledged websites with high 
-                  performance and strong optimization. I have graduated from the 
-                  Bootcamp program and obtained my certificate in full stack web 
-                  development from UT University.
+                  I think that without a solid back-end foundation, you cannot succeed 
+                  as a great front-end developer. I prefer utilizing Node.js framework 
+                  to develop Restful Api and apply it to my back-end projects. I have knowledge
+                  to utilize GraphQL, PWA and I'm excited to learn about other new back-end 
+                  technology!
                 </p>
 
                 <div className="close-box">
@@ -226,10 +223,10 @@ function About() {
       <div className="backdrop">
         <div className="backnav">
           <div className="navigator">
-              <Link class="navItem" to="/about">About</Link>
-              <Link class="navItem" to="/portfolio">Portfolio</Link>
-              <Link class="navItem" to="/resume">Resume</Link>
-              <Link class="navItem" to="/contact">Contact</Link> 
+            <Link class="navItem" to="/about">About</Link>
+            <Link class="navItem" to="/portfolio">Portfolio</Link>
+            <Link class="navItem" to="/resume">Resume</Link>
+            <Link class="navItem" to="/contact">Contact</Link>
           </div>
         </div>
       </div>
@@ -238,4 +235,4 @@ function About() {
   )
 }
 
-export default About
+export default About;

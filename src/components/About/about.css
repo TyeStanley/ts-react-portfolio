@@ -153,6 +153,9 @@
   background: transparent;
   opacity: 0;
   transition: .5s ease-in-out;
+  display: block;
+  text-decoration: none;
+  color: #000;
 }
 /* Shows the back drop for mobile menu */ 
 .backdrop.backopen {
@@ -172,8 +175,6 @@
   border: 1px solid rgba(0 , 0, 0, .2);
   background: #fff;
   transition: .5s ease-in-out;
-  display: block;
-  text-decoration: none;
   color: #000;
 }
 /* end of mobile nav */

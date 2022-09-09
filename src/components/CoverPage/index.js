@@ -30,37 +30,43 @@ function CoverPage() {
               </Link>
 
               <div className="home-button pointer">
-                <FontAwesomeIcon icon={faBriefcase} className="fa-fw" />
-                {' '}Portfolio
+                <Link className="home-link" to="/portfolio">
+                  <FontAwesomeIcon icon={faBriefcase} className="fa-fw" />
+                  {' '}Portfolio
+                </Link>
               </div>
 
               <div className="home-button pointer">
-                <FontAwesomeIcon icon={faGraduationCap} className="fa-fw" />
-                {' '}Resume
+                <Link className="home-link" to="/resume">
+                  <FontAwesomeIcon icon={faGraduationCap} className="fa-fw" />
+                  {' '}Resume
+                </Link>
               </div>
 
               <div className="home-button hidden-button"></div>
 
               <div className="home-button pointer">
-                <FontAwesomeIcon icon={faEnvelope} className="fa-fw" />
-                {' '}Contact
+                <Link className="home-link" to="/contact">
+                  <FontAwesomeIcon icon={faEnvelope} className="fa-fw" />
+                  {' '}Contact
+                </Link>
               </div>
 
             </div>
 
             <div className="home-social">
               <div className="social-icon">
-                <a href="https://www.google.com">
+                <a href="https://www.linkedin.com/in/tye-stanley/">
                   <FontAwesomeIcon icon={faLinkedinIn} className="fa-2xl" />
                 </a>
               </div>
               <div className="social-icon">
-                <a href="https://www.google.com">
+                <a href="https://github.com/TyeStanley">
                   <FontAwesomeIcon icon={faGithub} className="fa-2xl" />
                 </a>
               </div>
               <div className="social-icon">
-                <a href="https://www.google.com">
+                <a href="https://stackoverflow.com/users/17858669/tye-stanley">
                   <FontAwesomeIcon icon={faStackOverflow} className="fa-2xl" />
                 </a>
               </div>
