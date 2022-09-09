@@ -18,7 +18,7 @@ function App() {
         <div>
           <Routes>
             <Route
-              path="/"
+              path="/ts-react-portfolio"
               element={<CoverPage />}
             />
             <Route
