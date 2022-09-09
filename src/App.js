@@ -22,19 +22,19 @@ function App() {
               element={<CoverPage />}
             />
             <Route
-              path="about"
+              path="/ts-react-portfolio/about"
               element={<About />}
             />
             <Route
-              path="/portfolio"
+              path="/ts-react-portfolio/portfolio"
               element={<Portfolio />}
             />
             <Route
-              path="/resume"
+              path="/ts-react-portfolio/resume"
               element={<Resume />}
             />
             <Route
-              path="contact"
+              path="/ts-react-portfolio/contact"
               element={<Contact />}
             />
           </Routes>
