@@ -179,6 +179,77 @@
 }
 /* end of mobile nav */
 
+/* portfolio mobile section */
+
+.content-details {
+  background: hsla(0,0%,100%,.7);
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-mobile {
+  margin: 0 auto;
+  width: 100%;
+  animation: reveal 1s cubic-bezier(0,0,0,1) 1 normal forwards;
+  animation-delay: .5s;
+  opacity: 0;
+}
+
+.portfolio .portfolio-mobile .mobile-slide {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.portfolio .portfolio-mobile .mobile-slide .mobile-image {
+  width: 100%;
+}
+.portfolio .portfolio-mobile .mobile-slide .mobile-image img {
+  width: 100%;
+  border: 1px solid gray;
+  animation: slides .5s ease-in-out 1 normal forwards;
+  transition: all .1s ease-in-out;
+  opacity: 0;
+}
+
+.portfolio .portfolio-mobile .mobile-slide .mobile-description p {
+  height: 35px;
+  opacity: 0;
+  animation: slides .5s ease-in-out 1 normal forwards;
+  font-size: .8rem;
+}
+.portfolio .portfolio-mobile .mobile-slide .mobile-description h3 {
+  width: 300px;
+  margin: 0 auto;
+  animation: slides .5s ease-in-out 1 normal forwards;
+  opacity: 0;
+}
+
+.portfolio .portfolio-mobile .mobile-controls {
+  display: flex;
+  margin-top: -35px;
+}
+.portfolio .portfolio-mobile .mobile-controls #left {
+  bottom: 0;
+  left: 0;
+  margin-left: 15px;
+}
+.portfolio .portfolio-mobile .mobile-controls #right {
+  bottom: 0;
+  right: 0;
+  margin-right: 15px;
+}
+.portfolio .portfolio-mobile .mobile-controls #left #leftArrow,
+.portfolio .portfolio-mobile .mobile-controls #right #rightArrow {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
 
 
 @media(min-width: 768px) {
@@ -246,6 +317,15 @@
 }
 
 @keyframes closeicon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slides {
   0% {
     opacity: 0;
   }

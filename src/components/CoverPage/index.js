@@ -56,17 +56,28 @@ function CoverPage() {
 
             <div className="home-social">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/tye-stanley/">
+                <a 
+                  href="https://www.linkedin.com/in/tye-stanley/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FontAwesomeIcon icon={faLinkedinIn} className="fa-2xl" />
                 </a>
               </div>
               <div className="social-icon">
-                <a href="https://github.com/TyeStanley">
+                <a href="https://github.com/TyeStanley"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FontAwesomeIcon icon={faGithub} className="fa-2xl" />
                 </a>
               </div>
               <div className="social-icon">
-                <a href="https://stackoverflow.com/users/17858669/tye-stanley">
+                <a 
+                  href="https://stackoverflow.com/users/17858669/tye-stanley"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FontAwesomeIcon icon={faStackOverflow} className="fa-2xl" />
                 </a>
               </div>
