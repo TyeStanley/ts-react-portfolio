@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/ts-react-portfolio/static/css/main.3b90b883.css",
-    "main.js": "/ts-react-portfolio/static/js/main.042ba286.js",
-    "static/media/foodPlanner900x800.png": "/ts-react-portfolio/static/media/foodPlanner900x800.602e73df83b3f69e74c7.png",
-    "static/media/nibblerOrigin900x800.png": "/ts-react-portfolio/static/media/nibblerOrigin900x800.a5521488ccad27f3367c.png",
-    "static/media/portfolioOrigin900x800.png": "/ts-react-portfolio/static/media/portfolioOrigin900x800.8ee901c385559247fec2.png",
+    "main.css": "/ts-react-portfolio/static/css/main.1ad5496c.css",
+    "main.js": "/ts-react-portfolio/static/js/main.79514cda.js",
+    "static/media/foodPlanner900x800.png": "/ts-react-portfolio/static/media/foodPlanner900x800.c2effe610ac2c72ca74a.png",
+    "static/media/nibblerOrigin900x800.png": "/ts-react-portfolio/static/media/nibblerOrigin900x800.f03b2e0bf52b92e373d7.png",
+    "static/media/portfolioOrigin900x800.png": "/ts-react-portfolio/static/media/portfolioOrigin900x800.84b160dca96dd231f635.png",
     "static/media/beachBackground.jpg": "/ts-react-portfolio/static/media/beachBackground.4916809643615991dda1.jpg",
     "static/media/me.jpg": "/ts-react-portfolio/static/media/me.47e24d19d47a19d78a42.jpg",
-    "static/media/weatherOrigin900x800.png": "/ts-react-portfolio/static/media/weatherOrigin900x800.1261f8520e4722a0c300.png",
-    "static/media/techblogOrigin900x800.png": "/ts-react-portfolio/static/media/techblogOrigin900x800.13da8bd535e2fac4a2d8.png",
-    "static/media/quizOrigin900x800.png": "/ts-react-portfolio/static/media/quizOrigin900x800.020f5427c8fd8b5f1a9a.png",
-    "static/media/passwordOrigin900x800.png": "/ts-react-portfolio/static/media/passwordOrigin900x800.5a3b55a00dff425a0f02.png",
+    "static/media/techblogOrigin900x800.png": "/ts-react-portfolio/static/media/techblogOrigin900x800.466b0a80a93cf84afdfd.png",
+    "static/media/weatherOrigin900x800.png": "/ts-react-portfolio/static/media/weatherOrigin900x800.794d244b2a1fa591c023.png",
+    "static/media/quizOrigin900x800.png": "/ts-react-portfolio/static/media/quizOrigin900x800.51c89bf7f93c7f454ce2.png",
+    "static/media/passwordOrigin900x800.png": "/ts-react-portfolio/static/media/passwordOrigin900x800.ce95d4debca1cce6e964.png",
     "index.html": "/ts-react-portfolio/index.html",
-    "main.3b90b883.css.map": "/ts-react-portfolio/static/css/main.3b90b883.css.map",
-    "main.042ba286.js.map": "/ts-react-portfolio/static/js/main.042ba286.js.map"
+    "main.1ad5496c.css.map": "/ts-react-portfolio/static/css/main.1ad5496c.css.map",
+    "main.79514cda.js.map": "/ts-react-portfolio/static/js/main.79514cda.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b90b883.css",
-    "static/js/main.042ba286.js"
+    "static/css/main.1ad5496c.css",
+    "static/js/main.79514cda.js"
   ]
 }
