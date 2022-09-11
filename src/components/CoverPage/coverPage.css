@@ -34,7 +34,7 @@
 
 .home .home-name h1 {
   color: #000;
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 450;
   -webkit-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
   animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
@@ -142,7 +142,7 @@
   }
 
   .home .home-name h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .home .underline {

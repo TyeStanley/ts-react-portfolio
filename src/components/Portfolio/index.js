@@ -113,6 +113,10 @@ function Portfolio() {
     nextSibling.style.setProperty('display', 'block');
   }
 
+  const openProject = () => {
+    console.log("Clicked");
+  }
+
   return (
     <div id="portfolio" className="portfolio">
 
@@ -186,8 +190,29 @@ function Portfolio() {
             </div>
           </div>
           
-          
         </div>
+
+        <div className="portfolio-grid">
+            
+          <div className="project">
+            <img 
+              src={portfolio}
+              alt="Portfolio"
+              onClick={openProject}
+            />
+          </div>
+
+          {projectList.map(project => (
+            <div key={project.name} className="project">
+              <img 
+                src={require(`../../assets/images/portfolio/${project.image}`)}
+                alt={project.altText}
+              />
+            </div>
+          ))}
+
+        </div>
+
       </div>
 
 

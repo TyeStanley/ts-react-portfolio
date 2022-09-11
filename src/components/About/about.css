@@ -253,6 +253,7 @@
 }
 
 .content-details .about-info p:nth-child(2) {
+  -webkit-animation-delay: 1.1s;
   animation-delay: 1.1s;
 }
 
@@ -279,17 +280,18 @@
 
 /* Buttons at the bottom of the page */
 .close-box {
+  display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
-  margin: 50 auto;
+  margin: 50px auto;
+  -webkit-animation: reveal 1s cubic-bezier(0,0,0,1) 1 normal forwards;
   animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -webkit-animation-delay: 1.5s;
   animation-delay: 1.4s;
   opacity: 0;
   justify-content: center;
 }
 .close-icon {
   width: 25%;
-  margin-top: 24px;
 }
 .frontend {
   display: block;
@@ -298,7 +300,9 @@
 }
 .frontend h1 {
   font-size: 1.8rem;
+  -webkit-animation: reveal 1s cubic-bezier(0,0,0,1) 1 normal forwards;
   animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -webkit-animation-delay: .3s;
   animation-delay: .3s;
   opacity: 0;
 }
@@ -313,7 +317,9 @@
   margin: 12.5px auto;
   display: block;
   border-radius: 2.5px;
+  -webkit-animation: underline .4s ease-out 1 normal forwards;
   animation: underline .4s ease-out 1 normal forwards;
+  -webkit-animation-delay: .8s;
   animation-delay: .8s;
   opacity: 0;
 }
@@ -325,7 +331,9 @@
 }
 .frontend-description {
   margin: 0 auto;
+  -webkit-animation: reveal 1s cubic-bezier(0,0,0,1) 1 normal forwards;
   animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -webkit-animation-delay: 1s;
   animation-delay: 1s;
   opacity: 0;
 }
@@ -333,7 +341,9 @@
   margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
+  -webkit-animation: reveal 1s cubic-bezier(0,0,0,1) 1 normal forwards;
   animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -webkit-animation-delay: 1.2s;
   animation-delay: 1.2s;
   opacity: 0;
 }

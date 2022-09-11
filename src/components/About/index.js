@@ -65,7 +65,6 @@ function About() {
     px: 7,
     pb: 4,
     opacity: 0.98,
-    
   };
 
   return (

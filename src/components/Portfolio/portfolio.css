@@ -64,7 +64,6 @@
   cursor: pointer;
 }
 
-
 /* mobile nav bar settings */
 .navbar .smallscreen-nav, .navbar .smallscreen-nav span {
   opacity: 1;
@@ -232,7 +231,7 @@
 }
 .portfolio .portfolio-mobile .mobile-slide .mobile-image img {
   width: 100%;
-  border: 1px solid gray;
+  border: 1px solid #000;
   -webkit-animation: slides .5s ease-in-out 1 normal forwards;
   animation: slides .5s ease-in-out 1 normal forwards;
   -webkit-transition: all .1s ease-in-out;
@@ -240,7 +239,10 @@
   transition: all .1s ease-in-out;
   opacity: 0;
 }
-
+.mobile-image img:hover {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
 .portfolio .portfolio-mobile .mobile-slide .mobile-description p {
   height: 35px;
   opacity: 0;
@@ -277,6 +279,70 @@
   cursor: pointer;
 }
 
+/* Desktop view grid */
+.portfolio .portfolio-grid {
+  display: none;
+}
+
+@media(min-width: 520px) {
+  .portfolio .portfolio-mobile {
+    display: none;
+  }
+  .portofolio .content-details {
+    height: 100%;
+  }
+  .portfolio .portfolio-grid {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+  }
+  .portfolio .portfolio-grid .project {
+    opacity: 0;
+    width: 100%;
+    -webkit-animation: images .6s ease-out 1 normal forwards;
+    animation: images .6s ease-out 1 normal forwards;
+  }
+  .portfolio .portfolio-grid .project:first-child {
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+  }
+  .portfolio .portfolio-grid .project:nth-child(2) {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  .portfolio .portfolio-grid .project:nth-child(3) {
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+  }
+  .portfolio .portfolio-grid .project:nth-child(4) {
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+  }
+  .portfolio .portfolio-grid .project:nth-child(5) {
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+  }
+  .portfolio .portfolio-grid .project:nth-child(6) {
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+  }
+  .portfolio .portfolio-grid .project:nth-child(7) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+  .portfolio .portfolio-grid img {
+    width: 100%;
+    opacity: .8;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+  .portfolio .portfolio-grid img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+}
 
 @media(min-width: 768px) {
   .portfolio {
@@ -286,6 +352,7 @@
   }
   .portfolio .content-nav {
     margin-bottom: -15px;
+    -webkit-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
     animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
   }
   .portfolio .content-nav h1 {
@@ -313,16 +380,80 @@
   .navbar .smallscreen-nav {
     display: none;
   }
-  
+
+  /* Desktop View Grid */
+  .content-details {
+    height: auto;
+    background: hsla(0,0%,100%,.7);
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+    border: 1px solid #000;
+  }
+
+  .portfolio .portfolio-grid {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1rem;
+  }
+  .portfolio .portfolio-grid .project {
+    opacity: 0;
+    width: 100%;
+    -webkit-animation: images .5s ease-out 1 normal forwards;
+    animation: images .5s ease-out 1 normal forwards;
+  }
+  .portfolio .portfolio-grid .project:first-child {
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+  }
+  .portfolio .portfolio-grid .project:nth-child(2) {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  .portfolio .portfolio-grid .project:nth-child(3) {
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+  }
+  .portfolio .portfolio-grid .project:nth-child(4) {
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+  }
+  .portfolio .portfolio-grid .project:nth-child(5) {
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+  }
+  .portfolio .portfolio-grid .project:nth-child(6) {
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+  }
+  .portfolio .portfolio-grid .project:nth-child(7) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+  .portfolio .portfolio-grid img, .portfolio .portfolio-grid img:hover {
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+  }
+  .portfolio .portfolio-grid img {
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
 }
 
 @keyframes reveal {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(40%);
     transform: translateY(40%);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -330,14 +461,17 @@
 @keyframes underline {
   0% {
     opacity: 0;
+    -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
   75% {
     opacity: 0.5;
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
     opacity: 1;
+    -webkit-transform: rotate(1turn);
     transform: rotate(1turn);
   }
 }
@@ -357,5 +491,18 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes images {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
