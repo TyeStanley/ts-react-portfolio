@@ -35,7 +35,7 @@
   font-size: 2rem;
   margin-left: 10px;
   margin-top: 5px;
-  color: #FDFD96;
+  color: #d8364c;
 }
 .contact .content-nav .homeicon.openIcon .divIcon {
   color: #000;
@@ -81,7 +81,7 @@
   position: absolute;
   height: 5px;
   width: 100%;
-  background: #FDFD96;
+  background: #d8364c;
   border-radius: 5px;
   left: 0;
   transition: .25s ease-in-out;
@@ -211,7 +211,7 @@
     color:#000;
   }
   .navbar .bigscreen-nav a:hover {
-    color: #FDFD96;
+    color: #d8364c;
   }
   .navbar .smallscreen-nav {
     display: none;

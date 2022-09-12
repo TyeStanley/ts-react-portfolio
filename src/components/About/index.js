@@ -199,11 +199,6 @@ function About() {
                 <div className="close-box">
                   <Button 
                     onClick={handleClose2}
-                    sx={{ 
-                      color: '#000', 
-                      bgcolor: '#FDFD96', 
-                      border: '1px solid #000',
-                    }}
                     className="close-icon"
                   >
                     <strong>close</strong>

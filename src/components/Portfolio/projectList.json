@@ -5,7 +5,11 @@
     "name": "Nibbler",
     "altText": "Nibbler",
     "deployed": "https://fathomless-peak-48299.herokuapp.com",
-    "github": "https://github.com/TyeStanley/nibbler"
+    "github": "https://github.com/TyeStanley/nibbler",
+    "paragraph": "Temp text goes here!",
+    "state": "nibbler",
+    "open": "openNibbler",
+    "close": "closeNibbler"
   },
   {
     "image": "foodPlanner900x800.png",
@@ -13,7 +17,11 @@
     "name": "My Food Planner",
     "altText": "Food Planner",
     "deployed": "https://tyestanley.github.io/my-food-planner",
-    "github": "https://github.com/TyeStanley/my-food-planner"
+    "github": "https://github.com/TyeStanley/my-food-planner",
+    "paragraph": "Temp text goes here!",
+    "state": "foodPlanner",
+    "open": "openFoodPlanner",
+    "close": "closeFoodPlanner"
   },
   {
     "image": "techblogOrigin900x800.png",
@@ -21,16 +29,23 @@
     "name": "My Tech Blog",
     "altText": "My Tech Blog",
     "deployed": "https://tech-blog-by-tye.herokuapp.com",
-    "github": "https://github.com/TyeStanley/my-tech-blog"
+    "github": "https://github.com/TyeStanley/my-tech-blog",
+    "paragraph": "Temp text goes here!",
+    "state": "techBlog",
+    "open": "openTechBlog",
+    "close": "closeTechBlog"
   },
-
   {
     "image": "weatherOrigin900x800.png",
     "techUsed": "JavaScript, jQuery, Bootstrap, HTML/CSS, OpenWeather API",
     "name": "Weather Dashboard",
     "altText": "Weather Dashboard",
     "deployed": "https://tyestanley.github.io/weather-dashboard",
-    "github": "https://github.com/TyeStanley/weather-dashboard"
+    "github": "https://github.com/TyeStanley/weather-dashboard",
+    "paragraph": "Temp text goes here!",
+    "state": "weather",
+    "open": "openWeather",
+    "close": "closeWeather"
   },
   {
     "image": "quizOrigin900x800.png",
@@ -38,7 +53,11 @@
     "name": "Code Quiz",
     "altText": "Code Quiz",
     "deployed": "https://tyestanley.github.io/code-quiz",
-    "github": "https://github.com/TyeStanley/code-quiz"
+    "github": "https://github.com/TyeStanley/code-quiz",
+    "paragraph": "Temp text goes here!",
+    "state": "codeQuiz",
+    "open": "openCodeQuiz",
+    "close": "closeCodeQuiz"
   },
   {
     "image": "passwordOrigin900x800.png",
@@ -46,6 +65,10 @@
     "name": "Password Generator",
     "altText": "Password Generator",
     "deployed": "https://tyestanley.github.io/password-generator",
-    "github": "https://github.com/TyeStanley/password-generator"
+    "github": "https://github.com/TyeStanley/password-generator",
+    "paragraph": "Temp text goes here!",
+    "state": "generator",
+    "open": "openGenerator",
+    "close": "closeGenerator"
   }
 ]
