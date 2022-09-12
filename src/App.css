@@ -16,3 +16,6 @@ body {
   background: rgba(255, 255, 255, 0.6);
   overflow: scroll;
 }
+.active {
+  color:#d8364c !important;
+}

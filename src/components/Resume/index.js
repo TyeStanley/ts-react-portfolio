@@ -66,7 +66,7 @@ function Resume() {
           <div className="navigator">
             <Link class="navItem" to="/ts-react-portfolio/about">About</Link>
             <Link class="navItem" to="/ts-react-portfolio/portfolio">Portfolio</Link>
-            <Link class="navItem" to="/ts-react-portfolio/resume">Resume</Link>
+            <Link class="navItem active" to="/ts-react-portfolio/resume">Resume</Link>
             <Link class="navItem" to="/ts-react-portfolio/contact">Contact</Link>
           </div>
         </div>

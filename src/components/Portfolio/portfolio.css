@@ -302,7 +302,7 @@
 .modal-content .close-box {
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 10px;
   opacity: 0;
   -webkit-animation: closeicon 1s cubic-bezier(0,0,0,1) 1 normal forwards;

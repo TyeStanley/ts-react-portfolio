@@ -357,13 +357,16 @@ function Portfolio() {
 
                     <div className="project-description">
                       <h2>Portfolio</h2>
-                      <h3>React, JavaScript, Node, HTML/CSS</h3>
+                      <h3>React, JavaScript, HTML/CSS, Material UI</h3>
                       <hr />
-                      <p>Text is filled in here with a bunch of it.</p>
-                      <a href="https://google.com">
+                      <p>
+                        This is my most recent project. It boast a clean look and easy navigation to go through my portfolio pages.
+                        It's also built with mobile first approach to support excellent phone compatibility.
+                      </p>
+                      <a href="https://tyestanley.github.io/ts-react-portfolio/">
                         <Button>website</Button>
                       </a>
-                      <a href="https://google.com">
+                      <a href="https://github.com/TyeStanley/ts-react-portfolio">
                         <Button>source</Button>
                       </a>
                     </div>
@@ -413,7 +416,11 @@ function Portfolio() {
                       <h2>Nibbler</h2>
                       <h3>React, JavaScript, Node, Express, GraphQL, JWT</h3>
                       <hr />
-                      <p>Text is filled in here with a bunch of it.</p>
+                      <p>
+                        The purpose of this project was to build a full-stack MERN application with my team that would create 
+                        an online social network to directly connect foodies. Users are able to compare restaurants and 
+                        their dishes as well as reviews and prices in order to find the right restaurant for them.
+                      </p>
                       <a href="https://fathomless-peak-48299.herokuapp.com">
                         <Button>website</Button>
                       </a>
@@ -466,7 +473,12 @@ function Portfolio() {
                       <h2>Food Planner</h2>
                       <h3>JavaScript, jQuery, Bulma, HTML/CSS</h3>
                       <hr />
-                      <p>Text is filled in here with a bunch of it.</p>
+                      <p>
+                        My team and I developed this website so we can have help enhance the lives of people who don't 
+                        have time to adequately plan out a weekly meal. With a quick search, you may uncover a 
+                        plethora of recipes to pick through and create an automatic grocery list that will be 
+                        texted or sent to you with your selection. Making the forthcoming week go as well as possible.
+                      </p>
                       <a href="https://tyestanley.github.io/my-food-planner">
                         <Button>website</Button>
                       </a>
@@ -519,7 +531,13 @@ function Portfolio() {
                       <h2>My Tech Blog</h2>
                       <h3>JavaScript, Node, Express, mySQL, Handlebars, HTML/CSS</h3>
                       <hr />
-                      <p>Text is filled in here with a bunch of it.</p>
+                      <p>
+                        This is a sequelize-powered mysql database that houses my tech blog. To publish, comment, 
+                        and upvote on posts, you must first establish an account. By hashing the passwords, it 
+                        employs bcrypt to strengthen the site's security. After logging in, the site will take 
+                        you to the dashboard where you may write new posts and browse those you've already written. 
+                        The homepage is where you may browse the most current posts and leave comments.
+                      </p>
                       <a href="https://tech-blog-by-tye.herokuapp.com">
                         <Button>website</Button>
                       </a>
@@ -572,7 +590,12 @@ function Portfolio() {
                       <h2>Weather Dashboard</h2>
                       <h3>JavaScript, jQuery, Bootstrap, HTML/CSS, OpenWeather API</h3>
                       <hr />
-                      <p>Text is filled in here with a bunch of it.</p>
+                      <p>
+                        This is a simple weather dashboard that displays the current weather conditions for the
+                        search that you searched from the search box. It'll also will display a 5-Day forecast
+                        so you can stay updated! If you want to come back to the weather dashboard your previous
+                        cities will persist along with automatically loading up your last searched city.
+                      </p>
                       <a href="https://tyestanley.github.io/weather-dashboard">
                         <Button>website</Button>
                       </a>
@@ -625,7 +648,11 @@ function Portfolio() {
                       <h2>Code Quiz</h2>
                       <h3>JavaScript, Bootstrap, HTML/CSS</h3>
                       <hr />
-                      <p>Text is filled in here with a bunch of it.</p>
+                      <p>
+                        This is an app that quizes you over JavaScript questions where you are timed to complete it.
+                        It also keeps a high score record where you can compete with your highest score. 
+                        Can you get the perfect score? Try it!
+                      </p>
                       <a href="https://tyestanley.github.io/code-quiz">
                         <Button>website</Button>
                       </a>
@@ -678,7 +705,10 @@ function Portfolio() {
                       <h2>Password Generator</h2>
                       <h3>JavaScript, HTML/CSS</h3>
                       <hr />
-                      <p>Text is filled in here with a bunch of it.</p>
+                      <p>
+                        This is a simple complete random password generator that can generate any password length between 8 and 128.
+                        You can choose between having lowercase, uppercase, numbers and even have special characters in your password!
+                      </p>
                       <a href="https://tyestanley.github.io/password-generator">
                         <Button>website</Button>
                       </a>
@@ -701,7 +731,7 @@ function Portfolio() {
         <div className="backnav">
           <div className="navigator">
             <Link className="navItem" to="/ts-react-portfolio/about">About</Link>
-            <Link className="navItem" to="/ts-react-portfolio/portfolio">Portfolio</Link>
+            <Link className="navItem active" to="/ts-react-portfolio/portfolio">Portfolio</Link>
             <Link className="navItem" to="/ts-react-portfolio/resume">Resume</Link>
             <Link className="navItem" to="/ts-react-portfolio/contact">Contact</Link>
           </div>
