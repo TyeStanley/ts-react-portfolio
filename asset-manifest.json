@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ts-react-portfolio/static/css/main.1ad5496c.css",
-    "main.js": "/ts-react-portfolio/static/js/main.79514cda.js",
+    "main.css": "/ts-react-portfolio/static/css/main.714a1109.css",
+    "main.js": "/ts-react-portfolio/static/js/main.ac8820de.js",
     "static/media/foodPlanner900x800.png": "/ts-react-portfolio/static/media/foodPlanner900x800.c2effe610ac2c72ca74a.png",
     "static/media/nibblerOrigin900x800.png": "/ts-react-portfolio/static/media/nibblerOrigin900x800.f03b2e0bf52b92e373d7.png",
     "static/media/portfolioOrigin900x800.png": "/ts-react-portfolio/static/media/portfolioOrigin900x800.84b160dca96dd231f635.png",
@@ -12,11 +12,11 @@
     "static/media/quizOrigin900x800.png": "/ts-react-portfolio/static/media/quizOrigin900x800.51c89bf7f93c7f454ce2.png",
     "static/media/passwordOrigin900x800.png": "/ts-react-portfolio/static/media/passwordOrigin900x800.ce95d4debca1cce6e964.png",
     "index.html": "/ts-react-portfolio/index.html",
-    "main.1ad5496c.css.map": "/ts-react-portfolio/static/css/main.1ad5496c.css.map",
-    "main.79514cda.js.map": "/ts-react-portfolio/static/js/main.79514cda.js.map"
+    "main.714a1109.css.map": "/ts-react-portfolio/static/css/main.714a1109.css.map",
+    "main.ac8820de.js.map": "/ts-react-portfolio/static/js/main.ac8820de.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ad5496c.css",
-    "static/js/main.79514cda.js"
+    "static/css/main.714a1109.css",
+    "static/js/main.ac8820de.js"
   ]
 }
