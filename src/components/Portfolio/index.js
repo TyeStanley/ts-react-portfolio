@@ -363,10 +363,17 @@ function Portfolio() {
                         This is my most recent project. It boast a clean look and easy navigation to go through my portfolio pages.
                         It's also built with mobile first approach to support excellent phone compatibility.
                       </p>
-                      <a href="https://tyestanley.github.io/ts-react-portfolio/">
+                      <a 
+                        href="https://tyestanley.github.io/ts-react-portfolio"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button>website</Button>
                       </a>
-                      <a href="https://github.com/TyeStanley/ts-react-portfolio">
+                      <a href="https://github.com/TyeStanley/ts-react-portfolio"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button>source</Button>
                       </a>
                     </div>
@@ -421,10 +428,16 @@ function Portfolio() {
                         an online social network to directly connect foodies. Users are able to compare restaurants and 
                         their dishes as well as reviews and prices in order to find the right restaurant for them.
                       </p>
-                      <a href="https://fathomless-peak-48299.herokuapp.com">
+                      <a href="https://fathomless-peak-48299.herokuapp.com"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button>website</Button>
                       </a>
-                      <a href="https://github.com/TyeStanley/nibbler">
+                      <a href="https://github.com/TyeStanley/nibbler"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button>source</Button>
                       </a>
                     </div>
@@ -479,10 +492,16 @@ function Portfolio() {
                         plethora of recipes to pick through and create an automatic grocery list that will be 
                         texted or sent to you with your selection. Making the forthcoming week go as well as possible.
                       </p>
-                      <a href="https://tyestanley.github.io/my-food-planner">
+                      <a href="https://tyestanley.github.io/my-food-planner"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button>website</Button>
                       </a>
-                      <a href="https://github.com/TyeStanley/my-food-planner">
+                      <a href="https://github.com/TyeStanley/my-food-planner"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button>source</Button>
                       </a>
                     </div>
@@ -538,10 +557,16 @@ function Portfolio() {
                         you to the dashboard where you may write new posts and browse those you've already written. 
                         The homepage is where you may browse the most current posts and leave comments.
                       </p>
-                      <a href="https://tech-blog-by-tye.herokuapp.com">
+                      <a href="https://tech-blog-by-tye.herokuapp.com"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button>website</Button>
                       </a>
-                      <a href="https://github.com/TyeStanley/my-tech-blog">
+                      <a href="https://github.com/TyeStanley/my-tech-blog"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button>source</Button>
                       </a>
                     </div>
@@ -596,10 +621,16 @@ function Portfolio() {
                         so you can stay updated! If you want to come back to the weather dashboard your previous
                         cities will persist along with automatically loading up your last searched city.
                       </p>
-                      <a href="https://tyestanley.github.io/weather-dashboard">
+                      <a href="https://tyestanley.github.io/weather-dashboard"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button>website</Button>
                       </a>
-                      <a href="https://github.com/TyeStanley/weather-dashboard">
+                      <a href="https://github.com/TyeStanley/weather-dashboard"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button>source</Button>
                       </a>
                     </div>
@@ -653,10 +684,16 @@ function Portfolio() {
                         It also keeps a high score record where you can compete with your highest score. 
                         Can you get the perfect score? Try it!
                       </p>
-                      <a href="https://tyestanley.github.io/code-quiz">
+                      <a href="https://tyestanley.github.io/code-quiz"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button>website</Button>
                       </a>
-                      <a href="https://github.com/TyeStanley/code-quiz">
+                      <a href="https://github.com/TyeStanley/code-quiz"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button>source</Button>
                       </a>
                     </div>
@@ -709,10 +746,16 @@ function Portfolio() {
                         This is a simple complete random password generator that can generate any password length between 8 and 128.
                         You can choose between having lowercase, uppercase, numbers and even have special characters in your password!
                       </p>
-                      <a href="https://tyestanley.github.io/password-generator">
+                      <a href="https://tyestanley.github.io/password-generator"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button>website</Button>
                       </a>
-                      <a href="https://github.com/TyeStanley/password-generator">
+                      <a href="https://github.com/TyeStanley/password-generator"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Button>source</Button>
                       </a>
                     </div>
