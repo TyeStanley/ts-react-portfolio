@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/ts-react-portfolio/static/css/main.9eb20b9d.css",
-    "main.js": "/ts-react-portfolio/static/js/main.64802ea3.js",
+    "main.css": "/ts-react-portfolio/static/css/main.52ec8206.css",
+    "main.js": "/ts-react-portfolio/static/js/main.e9fa8617.js",
     "static/media/foodPlanner900x800.png": "/ts-react-portfolio/static/media/foodPlanner900x800.c2effe610ac2c72ca74a.png",
     "static/media/nibblerOrigin900x800.png": "/ts-react-portfolio/static/media/nibblerOrigin900x800.f03b2e0bf52b92e373d7.png",
     "static/media/portfolioOrigin900x800.png": "/ts-react-portfolio/static/media/portfolioOrigin900x800.84b160dca96dd231f635.png",
     "static/media/beachBackground.jpg": "/ts-react-portfolio/static/media/beachBackground.4916809643615991dda1.jpg",
+    "static/media/1ST_PAGE_OF_RESUME.png": "/ts-react-portfolio/static/media/1ST_PAGE_OF_RESUME.64692342da5e5a5b483d.png",
+    "static/media/2ND_PAGE_OF_RESUME.png": "/ts-react-portfolio/static/media/2ND_PAGE_OF_RESUME.0db347555118f6e55898.png",
     "static/media/me.jpg": "/ts-react-portfolio/static/media/me.47e24d19d47a19d78a42.jpg",
     "static/media/techblogOrigin900x800.png": "/ts-react-portfolio/static/media/techblogOrigin900x800.466b0a80a93cf84afdfd.png",
     "static/media/weatherOrigin900x800.png": "/ts-react-portfolio/static/media/weatherOrigin900x800.794d244b2a1fa591c023.png",
     "static/media/quizOrigin900x800.png": "/ts-react-portfolio/static/media/quizOrigin900x800.51c89bf7f93c7f454ce2.png",
     "static/media/passwordOrigin900x800.png": "/ts-react-portfolio/static/media/passwordOrigin900x800.ce95d4debca1cce6e964.png",
+    "static/media/3RD_PAGE_OF_RESUME.png": "/ts-react-portfolio/static/media/3RD_PAGE_OF_RESUME.b04565dbb7cccb432bc4.png",
     "index.html": "/ts-react-portfolio/index.html",
-    "main.9eb20b9d.css.map": "/ts-react-portfolio/static/css/main.9eb20b9d.css.map",
-    "main.64802ea3.js.map": "/ts-react-portfolio/static/js/main.64802ea3.js.map"
+    "main.52ec8206.css.map": "/ts-react-portfolio/static/css/main.52ec8206.css.map",
+    "main.e9fa8617.js.map": "/ts-react-portfolio/static/js/main.e9fa8617.js.map"
   },
   "entrypoints": [
-    "static/css/main.9eb20b9d.css",
-    "static/js/main.64802ea3.js"
+    "static/css/main.52ec8206.css",
+    "static/js/main.e9fa8617.js"
   ]
 }
