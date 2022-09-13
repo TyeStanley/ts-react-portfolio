@@ -198,7 +198,7 @@
 .content-details .pdf {
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 10px;
   opacity: 0;
   -webkit-animation: reveal 1s cubic-bezier(0,0,0,1) 1 normal forwards;
@@ -206,11 +206,14 @@
   -webkit-animation-delay: .7s;
   animation-delay: .7s;
   justify-content: center;
-
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .content-details .pdf-link {
   background-color: #d8364c;
-  padding: 5px 12px;
+  color: white;
+  padding: 1px 12px;
   font-size: 0.875rem;
   min-width: 64px;
   box-sizing: border-box;
@@ -218,9 +221,11 @@
   font-weight: 500;
   border-radius: 4px;
   text-transform: uppercase;
+  text-decoration: none;
+  z-index: 1000;
 }
-.download-button {
-  /* Next push will update with pdf link download */
+.content-details .pdf-link:hover {
+  color: #FDFD96;
 }
 /* Ends Here */
 .resume-controls {
@@ -254,6 +259,7 @@
   -webkit-animation-delay: .9s;
   animation-delay: .9s;
   opacity: 0;
+  margin-bottom: -72px;
 }
 .content-details .resume-container {
   margin: 0 auto;
@@ -334,6 +340,7 @@
   }
   .content-details .resume-container .resume-slide .current-page {
     font-size: 1rem;
+    margin-bottom: -15px;
   }
   .content-details .resume-container .resume-slide .resume-image {
     display: flex;

@@ -6,6 +6,8 @@ import { faHome, faLongArrowAltLeft, faLongArrowAltRight } from '@fortawesome/fr
 
 import Button from '@mui/material/Button';
 
+import pdf from '../../assets/resume/TYE_STANLEY_RESUME.pdf';
+
 function Resume() {
 
   const [navMenu, setNavMenu] = React.useState(false);
@@ -146,16 +148,6 @@ function Resume() {
 
       <div className="content-details">
 
-        <div className="pdf">
-
-          <div className="pdf-link">
-            <Button className="download-button" style={{color: 'white'}}>
-              Download
-            </Button>
-          </div>
-
-        </div>
-
         <div className="resume-controls">
           <div id="left" onClick={leftArrow}>
             <FontAwesomeIcon id="leftArrow" icon={faLongArrowAltLeft} />
@@ -166,6 +158,16 @@ function Resume() {
           <div id="right" onClick={rightArrow}>
             <FontAwesomeIcon id="rightArrow" icon={faLongArrowAltRight} />
           </div>
+        </div>
+
+        <div className="pdf">
+
+          <a className="pdf-link" href={pdf} download="TYE_STANLEY_RESUME">
+            <Button className="download-button" style={{color: 'white'}}>
+              Download
+            </Button>
+          </a>
+
         </div>
 
         <div className="resume-container">
