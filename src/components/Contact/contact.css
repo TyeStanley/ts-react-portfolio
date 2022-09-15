@@ -1,6 +1,6 @@
 .contact {
   width: 98%;
-  height: 100%;
+  height: 99%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
@@ -28,7 +28,7 @@
 .contact .content-nav .homeicon {
   width: 50px;
   opacity: 1;
-  /* transform: scale(0); */
+  margin-top: 2px;
 }
 
 .contact .content-nav .homeicon .divIcon {
@@ -179,7 +179,50 @@
 }
 /* end of mobile nav */
 
+.contact .content-details {
+  background: hsla(0,0%,100%,.7);
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
 
+.contact .content-details .contact-details {
+  margin: 25px auto;
+  width: 500px;
+  max-width: 90%;
+}
+.contact .content-details .contact-details h2 {
+  margin-bottom: 25px;
+  opacity: 0;
+  -webkit-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
+}
+.contact .content-details .contact-details .contact-form {
+  opacity: 0;
+  -webkit-animation: inputs .7s ease-in-out 1 normal forwards;
+  animation: inputs .7s ease-in-out 1 normal forwards;
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
+  font-family: 'Poppins', sans-serif;
+  padding-right: 15px;
+}
+
+.contact-info {
+  margin-top: 50px;
+  -webkit-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
+  opacity: 0;
+  padding-right: 10px;
+}
 
 @media(min-width: 768px) {
   .contact {
@@ -216,7 +259,37 @@
   .navbar .smallscreen-nav {
     display: none;
   }
-  
+  .content-details {
+    height: auto;
+    background: hsla(0,0%,100%,.7);
+    display: block;
+    width: 100%;
+    height: 800px;
+    border-radius: 10px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    overflow: hidden;
+  }
+  .contact-details {
+    margin: 75px auto;
+    width: 500px;
+    max-width: 98%;
+  }
+  .contact-details h2 {
+    margin-bottom: 50px;
+    opacity: 0;
+    -webkit-animation: reveal 1s cubic-bezier(0,0,0,1) 1 normal forwards;
+    animation: reveal 1s cubic-bezier(0,0,0,1) 1 normal forwards;
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+  }
+  .contact-details .contact-form {
+    opacity: 0;
+    -webkit-animation: inputs .9s ease-in-out 1 normal forwards;
+    animation: inputs .9s ease-in-out 1 normal forwards;
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+  }
 }
 
 @keyframes reveal {
@@ -246,6 +319,15 @@
 }
 
 @keyframes closeicon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes inputs {
   0% {
     opacity: 0;
   }

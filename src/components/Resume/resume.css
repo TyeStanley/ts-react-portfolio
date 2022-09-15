@@ -1,6 +1,6 @@
 .resume {
   width: 98%;
-  height: 100%;
+  height: 99%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
@@ -30,7 +30,7 @@
 .resume .content-nav .homeicon {
   width: 50px;
   opacity: 1;
-  /* transform: scale(0); */
+  margin-top: 2px;
 }
 
 .resume .content-nav .homeicon .divIcon {
@@ -237,7 +237,6 @@
   -webkit-animation: slides .5s ease-in-out 1 normal forwards;
   animation: slides .5s ease-in-out 1 normal forwards;
   width: 450px;
-
 }
 .resume-controls #left {
   bottom: 0;
@@ -273,7 +272,7 @@
 .content-details .resume-container .resume-slide {
   width: 100%;
 }
-.content-details .resume-container .resume-slide .current-page {
+.resume .content-details .resume-container .resume-slide .current-page {
   margin-top: 30px;
   font-size: .8rem;
 }
@@ -338,16 +337,23 @@
     right: 0;
     margin-right: 0px;
   }
-  .content-details .resume-container .resume-slide .current-page {
+  .resume .content-details {
+    padding-bottom: 250px;
+  }
+  .resume .content-details .resume-container .resume-slide {
+    padding-bottom: 250px;
+  }
+  .resume .content-details .resume-container .resume-slide .current-page {
     font-size: 1rem;
     margin-bottom: -15px;
   }
-  .content-details .resume-container .resume-slide .resume-image {
+  .resume .content-details .resume-container .resume-slide .resume-image {
     display: flex;
     justify-content: center;
     transform:scale(1);
     margin-top: 20px;
     margin-bottom: 0px;
+    padding-bottom: 250px;
   }
 }
 
