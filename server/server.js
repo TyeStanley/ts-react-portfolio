@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require("cors");
 const EmailSender = require("./sendEmail.js");
 const morgan = require('morgan')
+const path = require('path');
 require('dotenv').config()
 
 
@@ -11,6 +12,14 @@ app.use(cors());
 app.use(morgan('dev'))
 const port = process.env.PORT || 3001;
 
+// Serve up static assets
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
 
 // ****** SEND API
 app.post("/send", async (req, res) => {
