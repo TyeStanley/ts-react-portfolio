@@ -1,3 +1,3 @@
-#React Portfolio
+# React Portfolio
 
 ## In-progress
