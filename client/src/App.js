@@ -18,23 +18,23 @@ function App() {
         <div>
           <Routes>
             <Route
-              path="/ts-react-portfolio"
+              path="/"
               element={<CoverPage />}
             />
             <Route
-              path="/ts-react-portfolio/about"
+              path="/about"
               element={<About />}
             />
             <Route
-              path="/ts-react-portfolio/portfolio"
+              path="/portfolio"
               element={<Portfolio />}
             />
             <Route
-              path="/ts-react-portfolio/resume"
+              path="/resume"
               element={<Resume />}
             />
             <Route
-              path="/ts-react-portfolio/contact"
+              path="/contact"
               element={<Contact />}
             />
           </Routes>

@@ -204,7 +204,7 @@
   -webkit-animation-delay: .8s;
   animation-delay: .8s;
 }
-.contact .content-details .contact-details .contact-form {
+.contact .content-details .contact-details .contact-container {
   opacity: 0;
   -webkit-animation: inputs .7s ease-in-out 1 normal forwards;
   animation: inputs .7s ease-in-out 1 normal forwards;
@@ -283,7 +283,7 @@
     -webkit-animation-delay: .8s;
     animation-delay: .8s;
   }
-  .contact-details .contact-form {
+  .contact-details .contact-container {
     opacity: 0;
     -webkit-animation: inputs .9s ease-in-out 1 normal forwards;
     animation: inputs .9s ease-in-out 1 normal forwards;

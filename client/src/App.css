@@ -1,4 +1,6 @@
-
+* {
+  font-family: 'Poppins', sans-serif;
+}
 body {
   background-image: url("./assets/images/beachBackground.jpg");
   background-size: cover;

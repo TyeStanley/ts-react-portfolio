@@ -181,7 +181,7 @@ function Portfolio() {
 
       <div className="content-nav">
         <h1>Portfolio</h1>
-        <Link to="/ts-react-portfolio">
+        <Link to="/">
           <div className="homeicon">
             <FontAwesomeIcon icon={faHome} className="divIcon fa-fw" />
           </div>
@@ -192,10 +192,10 @@ function Portfolio() {
         <div className="navbar">
 
           <div className="bigscreen-nav">
-            <Link to="/ts-react-portfolio/about">About</Link>
-            <Link to="/ts-react-portfolio/portfolio">Portfolio</Link>
-            <Link to="/ts-react-portfolio/resume">Resume</Link>
-            <Link to="/ts-react-portfolio/contact">Contact</Link>
+            <Link to="/about">About</Link>
+            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/resume">Resume</Link>
+            <Link to="/contact">Contact</Link>
           </div>
 
           <div className="smallscreen-nav" onClick={openMenu}>
@@ -773,10 +773,10 @@ function Portfolio() {
       <div className="backdrop">
         <div className="backnav">
           <div className="navigator">
-            <Link className="navItem" to="/ts-react-portfolio/about">About</Link>
-            <Link className="navItem active" to="/ts-react-portfolio/portfolio">Portfolio</Link>
-            <Link className="navItem" to="/ts-react-portfolio/resume">Resume</Link>
-            <Link className="navItem" to="/ts-react-portfolio/contact">Contact</Link>
+            <Link className="navItem" to="/about">About</Link>
+            <Link className="navItem active" to="/portfolio">Portfolio</Link>
+            <Link className="navItem" to="/resume">Resume</Link>
+            <Link className="navItem" to="/contact">Contact</Link>
           </div>
         </div>
       </div>

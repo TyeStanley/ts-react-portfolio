@@ -72,7 +72,7 @@ function About() {
 
       <div className="content-nav">
         <h1>About</h1>
-        <Link to="/ts-react-portfolio">
+        <Link to="/">
           <div className="homeicon">
             <FontAwesomeIcon icon={faHome} className="divIcon fa-fw" />
           </div>
@@ -83,10 +83,10 @@ function About() {
         <div className="navbar">
 
           <div className="bigscreen-nav">
-            <Link to="/ts-react-portfolio/about">About</Link>
-            <Link to="/ts-react-portfolio/portfolio">Portfolio</Link>
-            <Link to="/ts-react-portfolio/resume">Resume</Link>
-            <Link to="/ts-react-portfolio/contact">Contact</Link>
+            <Link to="/about">About</Link>
+            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/resume">Resume</Link>
+            <Link to="/contact">Contact</Link>
           </div>
 
           <div className="smallscreen-nav" onClick={openMenu}>
@@ -217,10 +217,10 @@ function About() {
       <div className="backdrop">
         <div className="backnav">
           <div className="navigator">
-            <Link class="navItem active" to="/ts-react-portfolio/about">About</Link>
-            <Link class="navItem" to="/ts-react-portfolio/portfolio">Portfolio</Link>
-            <Link class="navItem" to="/ts-react-portfolio/resume">Resume</Link>
-            <Link class="navItem" to="/ts-react-portfolio/contact">Contact</Link>
+            <Link class="navItem active" to="/about">About</Link>
+            <Link class="navItem" to="/portfolio">Portfolio</Link>
+            <Link class="navItem" to="/resume">Resume</Link>
+            <Link class="navItem" to="/contact">Contact</Link>
           </div>
         </div>
       </div>

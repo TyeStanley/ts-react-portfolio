@@ -22,7 +22,7 @@ function CoverPage() {
             <div className="underline"></div>
 
             <div className="home-buttons">
-              <Link className="home-link" to="/ts-react-portfolio/about">
+              <Link className="home-link" to="/about">
                 <div className="home-button pointer">
                   <FontAwesomeIcon icon={faUser} className="fa-fw" />
                   {' '}About
@@ -30,14 +30,14 @@ function CoverPage() {
               </Link>
 
               <div className="home-button pointer">
-                <Link className="home-link" to="/ts-react-portfolio/portfolio">
+                <Link className="home-link" to="/portfolio">
                   <FontAwesomeIcon icon={faBriefcase} className="fa-fw" />
                   {' '}Portfolio
                 </Link>
               </div>
 
               <div className="home-button pointer">
-                <Link className="home-link" to="/ts-react-portfolio/resume">
+                <Link className="home-link" to="/resume">
                   <FontAwesomeIcon icon={faGraduationCap} className="fa-fw" />
                   {' '}Resume
                 </Link>
@@ -46,7 +46,7 @@ function CoverPage() {
               <div className="home-button hidden-button"></div>
 
               <div className="home-button pointer">
-                <Link className="home-link" to="/ts-react-portfolio/contact">
+                <Link className="home-link" to="/contact">
                   <FontAwesomeIcon icon={faEnvelope} className="fa-fw" />
                   {' '}Contact
                 </Link>
