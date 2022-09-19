@@ -18,8 +18,9 @@ body {
   bottom: 0;
   left: 0;
   background: rgba(255, 255, 255, 0.6);
-  overflow: scroll;
+  overflow: auto;
 }
+
 .active {
   color:#d8364c !important;
 }
