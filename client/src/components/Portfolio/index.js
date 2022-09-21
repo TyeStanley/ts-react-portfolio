@@ -131,7 +131,7 @@ function Portfolio() {
   const [foodPlanner, setFoodPlanner] = React.useState(false);
   const [techBlog, setTechBlog] = React.useState(false);
   const [weather, setWeather] = React.useState(false);
-  const [codeQuiz, setCodeQuiz] = React.useState(false);
+  const [noteTaker, setNoteTaker] = React.useState(false);
   const [generator, setGenerator] = React.useState(false);
 
   const openNibbler = () => {
@@ -162,11 +162,11 @@ function Portfolio() {
     setWeather(false);
   }
 
-  const openCodeQuiz = () => {
-    setCodeQuiz(true);
+  const openNoteTaker = () => {
+    setNoteTaker(true);
   }
-  const closeCodeQuiz = () => {
-    setCodeQuiz(false);
+  const closeNoteTaker = () => {
+    setNoteTaker(false);
   }
 
   const openGenerator = () => {
@@ -285,14 +285,14 @@ function Portfolio() {
           <div className="mobile-slide" style={{display: 'none'}}>
             <div className="mobile-image">
               <img 
-                src={require('../../assets/images/portfolio/quizOrigin900x800.png')} 
-                alt="Code Quiz"
-                onClick={openCodeQuiz}
+                src={require('../../assets/images/portfolio/noteTaker900x800.png')} 
+                alt="Note Taker"
+                onClick={openNoteTaker}
               />
             </div>
             <div className="mobile-description">
-              <p>JavaScript, Bootstrap, HTML/CSS</p>
-              <h3>Code Quiz</h3>
+              <p>JavaScript, Node, Express, HTML/CSS</p>
+              <h3>Note Taker</h3>
             </div>
           </div>
 
@@ -643,14 +643,14 @@ function Portfolio() {
           
           <div className="project">
             <img 
-              src={require('../../assets/images/portfolio/quizOrigin900x800.png')}
-              alt="Code Quiz"
-              onClick={openCodeQuiz}
+              src={require('../../assets/images/portfolio/noteTaker900x800.png')}
+              alt="Note Taker"
+              onClick={openNoteTaker}
             />
             <Modal
               hideBackdrop
-              open={codeQuiz}
-              onClose={closeCodeQuiz}
+              open={noteTaker}
+              onClose={closeNoteTaker}
               aria-labelledby="modal-title"
               aria-describedby="modal-description" 
             >
@@ -660,7 +660,7 @@ function Portfolio() {
                   <div className="close-box">
                     <div className="spacer"></div>
                     <div className="close-icon">
-                      <Button onClick={closeCodeQuiz}>
+                      <Button onClick={closeNoteTaker}>
                         Close
                       </Button>
                     </div>
@@ -670,27 +670,28 @@ function Portfolio() {
 
                     <div className="project-image">
                       <img 
-                        src={require('../../assets/images/portfolio/quizOrigin900x800.png')} 
-                        alt="Code Quiz"
+                        src={require('../../assets/images/portfolio/noteTaker900x800.png')} 
+                        alt="Note Taker"
                       />
                     </div>
 
                     <div className="project-description">
-                      <h2>Code Quiz</h2>
-                      <h3>JavaScript, Bootstrap, HTML/CSS</h3>
+                      <h2>Note Taker</h2>
+                      <h3>JavaScript, Node, Express, HTML/CSS</h3>
                       <hr />
                       <p>
-                        This is an app that quizes you over JavaScript questions where you are timed to complete it.
-                        It also keeps a high score record where you can compete with your highest score. 
-                        Can you get the perfect score? Try it!
+                        This is a simple note taker that can be used to write and save notes.
+                        This application is using Express.js back end to save and retrieve 
+                        your notes from a JSON file to display them on screen. It's always 
+                        on a good note to have a handy application like this one!
                       </p>
-                      <a href="https://tyestanley.github.io/code-quiz"
+                      <a href="https://tye-note-taker.herokuapp.com/"
                         target="_blank"
                         rel="noreferrer"
                       >
                         <Button>website</Button>
                       </a>
-                      <a href="https://github.com/TyeStanley/code-quiz"
+                      <a href="https://github.com/TyeStanley/note-taker"
                         target="_blank"
                         rel="noreferrer"
                       >
