@@ -1,7 +1,7 @@
-const express = require('express')
+const express = require('express');
 const cors = require("cors");
 const EmailSender = require("./SendEmail.js");
-const morgan = require('morgan')
+const morgan = require('morgan');
 const path = require('path');
 require('dotenv').config()
 
