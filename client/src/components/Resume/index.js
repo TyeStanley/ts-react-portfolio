@@ -1,62 +1,63 @@
-import React from 'react';
+import React from "react";
 import "./resume.css";
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faLongArrowAltLeft, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHome,
+  faLongArrowAltLeft,
+  faLongArrowAltRight
+} from "@fortawesome/free-solid-svg-icons";
 
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 
-import pdf from '../../assets/resume/TYE_STANLEY_RESUME.pdf';
+import pdf from "../../assets/resume/TYE_STANLEY_RESUME.pdf";
 
 function Resume() {
-
   const [navMenu, setNavMenu] = React.useState(false);
   const openMenu = () => {
-    const menu = document.querySelector('.smallscreen-nav');
-    const backdrop = document.querySelector('.backdrop');
-    const backnav = document.querySelector('.backnav');
+    const menu = document.querySelector(".smallscreen-nav");
+    const backdrop = document.querySelector(".backdrop");
+    const backnav = document.querySelector(".backnav");
 
-    const homeIcon = document.querySelector('.homeicon');
+    const homeIcon = document.querySelector(".homeicon");
 
     if (!navMenu) {
       setNavMenu(true);
-      menu.classList.add('open');
-      backdrop.classList.add('backopen');
-      backnav.classList.add('backnavopen');
-      homeIcon.classList.add('openIcon');
+      menu.classList.add("open");
+      backdrop.classList.add("backopen");
+      backnav.classList.add("backnavopen");
+      homeIcon.classList.add("openIcon");
     } else {
       setNavMenu(false);
-      menu.classList.remove('open');
-      backdrop.classList.remove('backopen');
-      backnav.classList.remove('backnavopen');
-      homeIcon.classList.remove('openIcon');
+      menu.classList.remove("open");
+      backdrop.classList.remove("backopen");
+      backnav.classList.remove("backnavopen");
+      homeIcon.classList.remove("openIcon");
     }
-  }
+  };
 
   // resume section
   const leftArrow = () => {
-    const slides = Array.from(document.querySelectorAll('.resume-slide'));
+    const slides = Array.from(document.querySelectorAll(".resume-slide"));
 
     let currentSlide = null;
 
     function getBlock(slides) {
-      for (let i = 0; i < slides.length; i++ ) {
-        if (slides[i].style.display === 'block') {
-          currentSlide = slides[i]
+      for (let i = 0; i < slides.length; i++) {
+        if (slides[i].style.display === "block") {
+          currentSlide = slides[i];
 
           return currentSlide;
         }
       }
-    } 
+    }
 
     currentSlide = getBlock(slides);
     let prevSibling = null;
 
     function getPrev(currentSlide, slides) {
-
       for (let i = 0; i < slides.length; i++) {
         if (currentSlide === slides[i]) {
-
           if (slides[i].previousElementSibling === null) {
             prevSibling = slides[2];
             return prevSibling;
@@ -70,33 +71,31 @@ function Resume() {
 
     prevSibling = getPrev(currentSlide, slides);
 
-    currentSlide.style.setProperty('display', 'none');
-    prevSibling.style.setProperty('display', 'block');
-  }
+    currentSlide.style.setProperty("display", "none");
+    prevSibling.style.setProperty("display", "block");
+  };
 
   const rightArrow = () => {
-    const slides = Array.from(document.querySelectorAll('.resume-slide'));
+    const slides = Array.from(document.querySelectorAll(".resume-slide"));
 
     let currentSlide;
 
     function getBlock(slides) {
-      for (let i = 0; i < slides.length; i++ ) {
-        if (slides[i].style.display === 'block') {
-          currentSlide = slides[i]
+      for (let i = 0; i < slides.length; i++) {
+        if (slides[i].style.display === "block") {
+          currentSlide = slides[i];
 
           return currentSlide;
         }
       }
-    } 
+    }
 
     currentSlide = getBlock(slides);
     let nextSibling = null;
 
     function getNext(currentSlide, slides) {
-
       for (let i = 0; i < slides.length; i++) {
         if (currentSlide === slides[i]) {
-
           if (slides[i].nextElementSibling === null) {
             nextSibling = slides[0];
             return nextSibling;
@@ -110,25 +109,29 @@ function Resume() {
 
     nextSibling = getNext(currentSlide, slides);
 
-    currentSlide.style.setProperty('display', 'none');
-    nextSibling.style.setProperty('display', 'block');
-  }
+    currentSlide.style.setProperty("display", "none");
+    nextSibling.style.setProperty("display", "block");
+  };
 
   return (
-    <div id="resume" class="resume">
-
+    <div
+      id="resume"
+      class="resume"
+    >
       <div className="content-nav">
         <h1>Resume</h1>
         <Link to="/">
           <div className="homeicon">
-            <FontAwesomeIcon icon={faHome} className="divIcon fa-fw" />
+            <FontAwesomeIcon
+              icon={faHome}
+              className="divIcon fa-fw"
+            />
           </div>
         </Link>
 
         <div className="spacer"></div>
-        
-        <div className="navbar">
 
+        <div className="navbar">
           <div className="bigscreen-nav">
             <Link to="/about">About</Link>
             <Link to="/portfolio">Portfolio</Link>
@@ -136,90 +139,136 @@ function Resume() {
             <Link to="/contact">Contact</Link>
           </div>
 
-          <div className="smallscreen-nav" onClick={openMenu}>
+          <div
+            className="smallscreen-nav"
+            onClick={openMenu}
+          >
             <span></span>
             <span></span>
             <span></span>
             <span></span>
           </div>
-
         </div>
       </div>
 
       <div className="content-details">
-
         <div className="resume-controls">
-          <div id="left" onClick={leftArrow}>
-            <FontAwesomeIcon id="leftArrow" icon={faLongArrowAltLeft} />
+          <div
+            id="left"
+            onClick={leftArrow}
+          >
+            <FontAwesomeIcon
+              id="leftArrow"
+              icon={faLongArrowAltLeft}
+            />
           </div>
 
           <div className="spacer"></div>
 
-          <div id="right" onClick={rightArrow}>
-            <FontAwesomeIcon id="rightArrow" icon={faLongArrowAltRight} />
+          <div
+            id="right"
+            onClick={rightArrow}
+          >
+            <FontAwesomeIcon
+              id="rightArrow"
+              icon={faLongArrowAltRight}
+            />
           </div>
         </div>
 
         <div className="pdf">
-
-          <a className="pdf-link" href={pdf} download="TYE_STANLEY_RESUME">
-            <Button className="download-button" style={{color: 'white'}}>
+          <a
+            className="pdf-link"
+            href={pdf}
+            download="TYE_STANLEY_RESUME"
+          >
+            <Button
+              className="download-button"
+              style={{ color: "white" }}
+            >
               Download
             </Button>
           </a>
-
         </div>
 
         <div className="resume-container">
-
-          <div className="resume-slide" style={{display: 'block'}}>
-            <p className="current-page"><strong>Page: 1 of 3</strong></p>
+          <div
+            className="resume-slide"
+            style={{ display: "block" }}
+          >
+            <p className="current-page">
+              <strong>Page: 1 of 3</strong>
+            </p>
 
             <div className="resume-image">
-              <img 
-                src={require('../../assets/images/resume/1ST_PAGE_OF_RESUME.png')}
+              <img
+                src={require("../../assets/images/resume/1ST_PAGE_OF_RESUME.png")}
                 alt="Resume Page 1"
               />
             </div>
-
           </div>
 
-          <div className="resume-slide" style={{display: 'none'}}>
-            <div className="current-page"><strong>Page: 2 of 3</strong></div>
+          <div
+            className="resume-slide"
+            style={{ display: "none" }}
+          >
+            <div className="current-page">
+              <strong>Page: 2 of 3</strong>
+            </div>
 
             <div className="resume-image">
-              <img 
-                src={require('../../assets/images/resume/2ND_PAGE_OF_RESUME.png')}
+              <img
+                src={require("../../assets/images/resume/2ND_PAGE_OF_RESUME.png")}
                 alt="Resume Page 2"
               />
             </div>
-
           </div>
 
-          <div className="resume-slide" style={{display: 'none'}}>
-            <div className="current-page"><strong>Page: 3 of 3</strong></div>
+          <div
+            className="resume-slide"
+            style={{ display: "none" }}
+          >
+            <div className="current-page">
+              <strong>Page: 3 of 3</strong>
+            </div>
 
             <div className="resume-image">
-              <img 
-                src={require('../../assets/images/resume/3RD_PAGE_OF_RESUME.png')}
+              <img
+                src={require("../../assets/images/resume/3RD_PAGE_OF_RESUME.png")}
                 alt="Resume Page 3"
               />
             </div>
-
           </div>
-
         </div>
-        
       </div>
-
 
       <div className="backdrop">
         <div className="backnav">
           <div className="navigator">
-            <Link class="navItem" to="/about">About</Link>
-            <Link class="navItem" to="/portfolio">Portfolio</Link>
-            <Link class="navItem active" to="/resume">Resume</Link>
-            <Link class="navItem" to="/contact">Contact</Link>
+            <Link
+              class="navItem"
+              to="/about"
+            >
+              About
+            </Link>
+            <Link
+              class="navItem"
+              to="/portfolio"
+            >
+              Portfolio
+            </Link>
+            <Link
+              class="navItem active"
+              to="/resume"
+            >
+              Resume
+            </Link>
+            <Link
+              class="navItem"
+              to="/contact"
+            >
+              Contact
+            </Link>
           </div>
         </div>
       </div>
