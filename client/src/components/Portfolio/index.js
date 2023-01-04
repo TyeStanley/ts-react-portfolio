@@ -127,12 +127,20 @@ function Portfolio() {
     setMyPortfolio(false);
   };
   // Other projects
+  const [leagueApi, setLeagueApi] = React.useState(false);
   const [nibbler, setNibbler] = React.useState(false);
   const [foodPlanner, setFoodPlanner] = React.useState(false);
   const [techBlog, setTechBlog] = React.useState(false);
   const [weather, setWeather] = React.useState(false);
   const [noteTaker, setNoteTaker] = React.useState(false);
   const [generator, setGenerator] = React.useState(false);
+
+  const openLeagueApi = () => {
+    setLeagueApi(true);
+  };
+  const closeLeagueApi = () => {
+    setLeagueApi(false);
+  };
 
   const openNibbler = () => {
     setNibbler(true);
@@ -401,6 +409,62 @@ function Portfolio() {
                         It's also built with mobile first approach to support
                         excellent phone compatibility.
                       </p>
+                      <a
+                        href="https://tyestanley.github.io/ts-react-portfolio"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <Button>website</Button>
+                      </a>
+                      <a
+                        href="https://github.com/TyeStanley/ts-react-portfolio"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <Button>source</Button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </Box>
+            </Modal>
+          </div>
+
+          <div className="project">
+            <img
+              src={leagueApi}
+              alt="League API App"
+              onClick={openLeagueApi}
+            />
+            <Modal
+              hideBackdrop
+              open={leagueApi}
+              onClose={closeLeagueApi}
+              aria-labelledby="modal-title"
+              aria-describedby="modal-description"
+            >
+              <Box className="modal-container">
+                <div className="modal-content">
+                  <div className="close-box">
+                    <div className="spacer"></div>
+                    <div className="close-icon">
+                      <Button onClick={closeLeagueApi}>Close</Button>
+                    </div>
+                  </div>
+
+                  <div className="project-container">
+                    <div className="project-image">
+                      <img
+                        src={require("../../assets/images/portfolio/league-image.png")}
+                        alt="League Api"
+                      />
+                    </div>
+
+                    <div className="project-description">
+                      <h2>League Api</h2>
+                      <h3>React, JavaScript, HTML/CSS, Riots API</h3>
+                      <hr />
+                      <p>League Api</p>
                       <a
                         href="https://tyestanley.github.io/ts-react-portfolio"
                         target="_blank"

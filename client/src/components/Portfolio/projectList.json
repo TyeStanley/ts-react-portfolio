@@ -1,5 +1,17 @@
 [
   {
+    "image": "league-image.png",
+    "techUsed": "React, JavaScript, Node, Express, Riots API",
+    "name": "League API",
+    "altText": "League API Text",
+    "deployed": "",
+    "github": "",
+    "paragraph": "Temp text goes here!",
+    "state": "nibbler",
+    "open": "openLeagueApi",
+    "close": "closeLeagueApi"
+  },
+  {
     "image": "nibblerOrigin900x800.png",
     "techUsed": "React, JavaScript, Node, Express, GraphQL, JWT",
     "name": "Nibbler",
