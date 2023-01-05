@@ -18,10 +18,10 @@
   margin-bottom: -5px;
   z-index: 200;
   opacity: 0;
-  -webkit-animation: reveal 1s cubic-bezier(0,0,0,1) 1 normal forwards;
+  -webkit-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
   animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
-  -webkit-animation-delay: .7s;
-  animation-delay: .7s;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
 }
 
 .portfolio .content-nav h1 {
@@ -42,7 +42,7 @@
 }
 .portfolio .content-nav .homeicon.openIcon .divIcon {
   color: #000;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .spacer {
@@ -65,7 +65,8 @@
 }
 
 /* mobile nav bar settings */
-.navbar .smallscreen-nav, .navbar .smallscreen-nav span {
+.navbar .smallscreen-nav,
+.navbar .smallscreen-nav span {
   opacity: 1;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -78,9 +79,9 @@
   height: 25px;
   margin-right: 10px;
   margin-top: 10px;
-  -webkit-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
@@ -91,9 +92,9 @@
   background: #d8364c;
   border-radius: 5px;
   left: 0;
-  -webkit-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 /* This is for the mobile menu dashes */
 .navbar .smallscreen-nav span:first-child {
@@ -128,13 +129,14 @@
 }
 
 /* backdrop mobile menu */
-.backdrop, .backdrop.backopen {
-  -webkit-transition: .3s ease-in;
-  -o-transition: .3s ease-in;
-  transition: .3s ease-in;
+.backdrop,
+.backdrop.backopen {
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 .backdrop {
-  background: hsla(0,0%,100%,.95);
+  background: hsla(0, 0%, 100%, 0.95);
   width: 100%;
   height: 100%;
   left: 0;
@@ -157,9 +159,9 @@
   -ms-transform: translateX(100%);
   transform: translateX(100%);
   opacity: 0;
-  -webkit-transition: .5s ease-out;
-  -o-transition: .5s ease-out;
-  transition: .5s ease-out;
+  -webkit-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 .backdrop .backnav .navigator .navItem {
   cursor: pointer;
@@ -167,14 +169,14 @@
   width: 250px;
   background: transparent;
   opacity: 0;
-  -webkit-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   display: block;
   text-decoration: none;
   color: #000;
 }
-/* Shows the back drop for mobile menu */ 
+/* Shows the back drop for mobile menu */
 .backdrop.backopen {
   z-index: 100;
   opacity: 1;
@@ -182,16 +184,16 @@
 .backdrop .backnav.backnavopen .navigator {
   transform: translateX(0);
   opacity: 1;
-  transition: .5s ease-out;
+  transition: 0.5s ease-out;
 }
 .backdrop .backnav.backnavopen .navigator .navItem {
   cursor: pointer;
   margin: 25px auto;
   width: 250px;
   opacity: 1;
-  border: 1px solid rgba(0 , 0, 0, .2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   background: #fff;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   color: #000;
 }
 /* end of mobile nav */
@@ -199,7 +201,7 @@
 /* portfolio mobile section */
 
 .portfolio .content-details {
-  background: hsla(0,0%,100%,.7);
+  background: hsla(0, 0%, 100%, 0.7);
   display: block;
   width: 100%;
   height: auto;
@@ -214,10 +216,10 @@
 .portfolio .portfolio-mobile {
   margin: 0 auto;
   width: 100%;
-  -webkit-animation: reveal 1s cubic-bezier(0,0,0,1) 1 normal forwards;
-  animation: reveal 1s cubic-bezier(0,0,0,1) 1 normal forwards;
-  -webkit-animation-delay: .5s;
-  animation-delay: .5s;
+  -webkit-animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  animation: reveal 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   opacity: 0;
 }
 
@@ -232,11 +234,11 @@
 .portfolio .portfolio-mobile .mobile-slide .mobile-image img {
   width: 100%;
   border: 1px solid #000;
-  -webkit-animation: slides .5s ease-in-out 1 normal forwards;
-  animation: slides .5s ease-in-out 1 normal forwards;
-  -webkit-transition: all .1s ease-in-out;
-  -o-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
+  -webkit-animation: slides 0.5s ease-in-out 1 normal forwards;
+  animation: slides 0.5s ease-in-out 1 normal forwards;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   opacity: 0;
 }
 .mobile-image img:hover {
@@ -246,15 +248,15 @@
 .portfolio .portfolio-mobile .mobile-slide .mobile-description p {
   height: 35px;
   opacity: 0;
-  -webkit-animation: slides .5s ease-in-out 1 normal forwards;
-  animation: slides .5s ease-in-out 1 normal forwards;
-  font-size: .8rem;
+  -webkit-animation: slides 0.5s ease-in-out 1 normal forwards;
+  animation: slides 0.5s ease-in-out 1 normal forwards;
+  font-size: 0.8rem;
 }
 .portfolio .portfolio-mobile .mobile-slide .mobile-description h3 {
   width: 300px;
   margin: 0 auto;
-  -webkit-animation: slides .5s ease-in-out 1 normal forwards;
-  animation: slides .5s ease-in-out 1 normal forwards;
+  -webkit-animation: slides 0.5s ease-in-out 1 normal forwards;
+  animation: slides 0.5s ease-in-out 1 normal forwards;
   opacity: 0;
 }
 
@@ -292,7 +294,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
   z-index: 1001;
 }
 .modal-content {
@@ -306,15 +308,15 @@
   margin-top: 30px;
   margin-bottom: 10px;
   opacity: 0;
-  -webkit-animation: closeicon 1s cubic-bezier(0,0,0,1) 1 normal forwards;
-  animation: closeicon 1s cubic-bezier(0,0,0,1) 1 normal forwards;
-  -webkit-animation-delay: .7s;
-  animation-delay: .7s;
+  -webkit-animation: closeicon 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  animation: closeicon 1s cubic-bezier(0, 0, 0, 1) 1 normal forwards;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
 }
 .modal-content .close-icon {
-  -webkit-transition: all .1s ease-in-out;
-  -o-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   cursor: pointer;
   text-align: right;
 }
@@ -332,15 +334,15 @@
   margin-right: 11px;
 }
 .modal-content .close-icon Button:hover {
-  color:#FDFD96;
+  color: #fdfd96;
 }
 .project-container {
   display: block;
   opacity: 0;
   width: 95%;
   margin: 0 auto;
-  -webkit-animation: projects .8s ease-in 1 normal forwards;
-  animation: projects .8s ease-in 1 normal forwards;
+  -webkit-animation: projects 0.8s ease-in 1 normal forwards;
+  animation: projects 0.8s ease-in 1 normal forwards;
 }
 .project-container .project-image {
   margin: 0 auto;
@@ -350,11 +352,11 @@
 .project-container .project-image img {
   width: 100%;
   cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, .5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 .project-container .project-description {
   display: block;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-bottom: 25px;
 }
 .project-container .project-description h2 {
@@ -387,10 +389,10 @@
   margin-right: 10px;
 }
 .project-container .project-description a Button:hover {
-  color:#FDFD96;
+  color: #fdfd96;
 }
 
-@media(min-width: 520px) {
+@media (min-width: 520px) {
   .portfolio .portfolio-mobile {
     display: none;
   }
@@ -406,12 +408,12 @@
   .portfolio .portfolio-grid .project {
     opacity: 0;
     width: 100%;
-    -webkit-animation: images .6s ease-out 1 normal forwards;
-    animation: images .6s ease-out 1 normal forwards;
+    -webkit-animation: images 0.6s ease-out 1 normal forwards;
+    animation: images 0.6s ease-out 1 normal forwards;
   }
   .portfolio .portfolio-grid .project:first-child {
-    -webkit-animation-delay: .8s;
-    animation-delay: .8s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
   }
   .portfolio .portfolio-grid .project:nth-child(2) {
     -webkit-animation-delay: 1s;
@@ -439,7 +441,7 @@
   }
   .portfolio .portfolio-grid img {
     width: 100%;
-    opacity: .8;
+    opacity: 0.8;
     border: 1px solid #000;
     cursor: pointer;
   }
@@ -449,7 +451,7 @@
     transform: scale(1.03);
   }
   /* Modal */
- 
+
   .project-container {
     display: -ms-flexbox;
     display: flex;
@@ -469,7 +471,7 @@
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .portfolio {
     width: 1200px;
     max-width: 95%;
@@ -497,7 +499,7 @@
   }
   .navbar .bigscreen-nav a {
     text-decoration: none;
-    color:#000;
+    color: #000;
   }
   .navbar .bigscreen-nav a:hover {
     color: #d8364c;
@@ -509,7 +511,7 @@
   /* Desktop View Grid */
   .content-details {
     height: auto;
-    background: hsla(0,0%,100%,.7);
+    background: hsla(0, 0%, 100%, 0.7);
     display: block;
     width: 100%;
     border-radius: 10px;
@@ -526,12 +528,13 @@
   .portfolio .portfolio-grid .project {
     opacity: 0;
     width: 100%;
-    -webkit-animation: images .5s ease-out 1 normal forwards;
-    animation: images .5s ease-out 1 normal forwards;
+    -webkit-animation: images 0.5s ease-out 1 normal forwards;
+    animation: images 0.5s ease-out 1 normal forwards;
   }
+  /* ! Need to add the next child if adding more projects to the list */
   .portfolio .portfolio-grid .project:first-child {
-    -webkit-animation-delay: .8s;
-    animation-delay: .8s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
   }
   .portfolio .portfolio-grid .project:nth-child(2) {
     -webkit-animation-delay: 1s;
@@ -557,10 +560,15 @@
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
   }
-  .portfolio .portfolio-grid img, .portfolio .portfolio-grid img:hover {
-    -webkit-transition: all .1s ease-in-out;
-    -o-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
+  .portfolio .portfolio-grid .project:nth-child(8) {
+    -webkit-animation-delay: 2.2s;
+    animation-delay: 2.2s;
+  }
+  .portfolio .portfolio-grid img,
+  .portfolio .portfolio-grid img:hover {
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
   .portfolio .portfolio-grid img {
     width: 100%;
@@ -651,7 +659,7 @@
     transform: translateY(-100%);
   }
   75% {
-    opacity: .8;
+    opacity: 0.8;
     -webkit-transform: translateY(5%);
     transform: translateY(5%);
   }

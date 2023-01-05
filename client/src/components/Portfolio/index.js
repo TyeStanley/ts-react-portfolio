@@ -61,7 +61,8 @@ function Portfolio() {
       for (let i = 0; i < slides.length; i++) {
         if (currentSlide === slides[i]) {
           if (slides[i].previousElementSibling === null) {
-            prevSibling = slides[6];
+            // * When adding more projects change this number to the number of projects added
+            prevSibling = slides[7];
             return prevSibling;
           } else {
             prevSibling = slides[i].previousElementSibling;
@@ -127,7 +128,8 @@ function Portfolio() {
     setMyPortfolio(false);
   };
   // Other projects
-  const [leagueApi, setLeagueApi] = React.useState(false);
+  const [tesla, setTesla] = React.useState(false);
+  // const [leagueApi, setLeagueApi] = React.useState(false);
   const [nibbler, setNibbler] = React.useState(false);
   const [foodPlanner, setFoodPlanner] = React.useState(false);
   const [techBlog, setTechBlog] = React.useState(false);
@@ -135,12 +137,19 @@ function Portfolio() {
   const [noteTaker, setNoteTaker] = React.useState(false);
   const [generator, setGenerator] = React.useState(false);
 
-  const openLeagueApi = () => {
-    setLeagueApi(true);
+  const openTesla = () => {
+    setTesla(true);
   };
-  const closeLeagueApi = () => {
-    setLeagueApi(false);
+  const closeTesla = () => {
+    setTesla(false);
   };
+
+  // const openLeagueApi = () => {
+  //   setLeagueApi(true);
+  // };
+  // const closeLeagueApi = () => {
+  //   setLeagueApi(false);
+  // };
 
   const openNibbler = () => {
     setNibbler(true);
@@ -237,6 +246,23 @@ function Portfolio() {
               <div className="mobile-description">
                 <p>React, JavaScript, HTML/CSS</p>
                 <h3>Portfolio</h3>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="mobile-slide"
+            style={{ display: "none" }}
+          >
+            <div className="mobile-image">
+              <img
+                src={require("../../assets/images/portfolio/teslaWebsite.png")}
+                alt="Tesla Website Clone"
+                onClick={openTesla}
+              />
+              <div className="mobile-description">
+                <p>React, Nextjs, Tailwind CSS</p>
+                <h3>Tesla Website Clone</h3>
               </div>
             </div>
           </div>
@@ -404,10 +430,12 @@ function Portfolio() {
                       <h3>React, JavaScript, HTML/CSS, Material UI</h3>
                       <hr />
                       <p>
-                        This is my most recent project. It boast a clean look
-                        and easy navigation to go through my portfolio pages.
-                        It's also built with mobile first approach to support
-                        excellent phone compatibility.
+                        Welcome to my most recent project! I am proud to present
+                        a clean and easy-to-navigate website featuring my
+                        portfolio. With a mobile-first design, this website
+                        offers excellent compatibility with phones and other
+                        portable devices. Thank you for visiting and I hope you
+                        enjoy exploring the site.
                       </p>
                       <a
                         href="https://tyestanley.github.io/ts-react-portfolio"
@@ -432,14 +460,14 @@ function Portfolio() {
 
           <div className="project">
             <img
-              src={leagueApi}
-              alt="League API App"
-              onClick={openLeagueApi}
+              src={require("../../assets/images/portfolio/teslaWebsite.png")}
+              alt="Tesla Clone Website"
+              onClick={openTesla}
             />
             <Modal
               hideBackdrop
-              open={leagueApi}
-              onClose={closeLeagueApi}
+              open={tesla}
+              onClose={closeTesla}
               aria-labelledby="modal-title"
               aria-describedby="modal-description"
             >
@@ -448,32 +476,39 @@ function Portfolio() {
                   <div className="close-box">
                     <div className="spacer"></div>
                     <div className="close-icon">
-                      <Button onClick={closeLeagueApi}>Close</Button>
+                      <Button onClick={closeTesla}>Close</Button>
                     </div>
                   </div>
 
                   <div className="project-container">
                     <div className="project-image">
                       <img
-                        src={require("../../assets/images/portfolio/league-image.png")}
-                        alt="League Api"
+                        src={require("../../assets/images/portfolio/teslaWebsite.png")}
+                        alt="Tesla Website Clone"
                       />
                     </div>
 
                     <div className="project-description">
-                      <h2>League Api</h2>
-                      <h3>React, JavaScript, HTML/CSS, Riots API</h3>
+                      <h2>Tesla Website Clone</h2>
+                      <h3>React, Nextjs, Tailwind CSS</h3>
                       <hr />
-                      <p>League Api</p>
+                      <p>
+                        This website is a clone of the Tesla website and is
+                        currently under development. However, I have made it
+                        available for viewing. I am working to ensure that all
+                        features and functionality on the site mimic the
+                        behavior of the original Tesla website as closely as
+                        possible. Thank you for your interest in the site!
+                      </p>
                       <a
-                        href="https://tyestanley.github.io/ts-react-portfolio"
+                        href="https://tesla-website-clone-blue.vercel.app/"
                         target="_blank"
                         rel="noreferrer"
                       >
                         <Button>website</Button>
                       </a>
                       <a
-                        href="https://github.com/TyeStanley/ts-react-portfolio"
+                        href="https://github.com/TyeStanley/tesla-website-clone"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -521,12 +556,14 @@ function Portfolio() {
                       <h3>React, JavaScript, Node, Express, GraphQL, JWT</h3>
                       <hr />
                       <p>
-                        The purpose of this project was to build a full-stack
-                        MERN application with my team that would create an
-                        online social network to directly connect foodies. Users
-                        are able to compare restaurants and their dishes as well
-                        as reviews and prices in order to find the right
-                        restaurant for them.
+                        Our team set out to create an online social network for
+                        foodies with the goal of connecting people who love
+                        food. We built a full-stack MERN application to allow
+                        users to compare restaurants and dishes, read reviews,
+                        and view prices to find the perfect restaurant for their
+                        needs. We hope that our platform will help food
+                        enthusiasts connect and make informed dining decisions.
+                        (Team Project)
                       </p>
                       <a
                         href="https://fathomless-peak-48299.herokuapp.com"
@@ -584,13 +621,14 @@ function Portfolio() {
                       <h3>JavaScript, jQuery, Bulma, HTML/CSS</h3>
                       <hr />
                       <p>
-                        My team and I developed this website so we can have help
-                        enhance the lives of people who don't have time to
-                        adequately plan out a weekly meal. With a quick search,
-                        you may uncover a plethora of recipes to pick through
-                        and create an automatic grocery list that will be texted
-                        or sent to you with your selection. Making the
-                        forthcoming week go as well as possible.
+                        We developed this website to help busy individuals plan
+                        their weekly meals with ease. With a simple search, you
+                        can discover a wide variety of recipes to choose from
+                        and generate a grocery list that will be sent to you via
+                        text or email based on your selected recipes. Our goal
+                        is to make the upcoming week as seamless and stress-free
+                        as possible by helping you plan and prepare your meals
+                        in advance. (Team Project)
                       </p>
                       <a
                         href="https://tyestanley.github.io/my-food-planner"
@@ -650,14 +688,14 @@ function Portfolio() {
                       </h3>
                       <hr />
                       <p>
-                        This is a sequelize-powered mysql database that houses
-                        my tech blog. To publish, comment, and upvote on posts,
-                        you must first establish an account. By hashing the
-                        passwords, it employs bcrypt to strengthen the site's
-                        security. After logging in, the site will take you to
-                        the dashboard where you may write new posts and browse
-                        those you've already written. The homepage is where you
-                        may browse the most current posts and leave comments.
+                        Welcome to my tech blog powered by a Sequelize-enabled
+                        MySQL database. To participate in the community by
+                        publishing, commenting, and upvoting on posts, you must
+                        first create an account. For added security, we use
+                        bcrypt to hash passwords. Once you are logged in, you
+                        can access the dashboard to write new posts and view the
+                        ones you have previously written. The homepage is where
+                        you can browse the latest posts and leave comments.
                       </p>
                       <a
                         href="https://tech-blog-by-tye.herokuapp.com"
@@ -717,13 +755,14 @@ function Portfolio() {
                       </h3>
                       <hr />
                       <p>
-                        This is a simple weather dashboard that displays the
-                        current weather conditions for the search that you
-                        searched from the search box. It'll also will display a
-                        5-Day forecast so you can stay updated! If you want to
-                        come back to the weather dashboard your previous cities
-                        will persist along with automatically loading up your
-                        last searched city.
+                        Welcome to my weather dashboard! Here, you can search
+                        for and view the current weather conditions for any
+                        location. The dashboard also provides a 5-day forecast
+                        to help you stay up to date. Your previous search
+                        history will be saved, allowing you to easily access
+                        your frequently viewed cities and automatically loading
+                        up your last searched city when you return to the
+                        dashboard.
                       </p>
                       <a
                         href="https://tyestanley.github.io/weather-dashboard"
@@ -781,11 +820,13 @@ function Portfolio() {
                       <h3>JavaScript, Node, Express, HTML/CSS</h3>
                       <hr />
                       <p>
-                        This is a simple note taker that can be used to write
-                        and save notes. This application is using Express.js
-                        back end to save and retrieve your notes from a JSON
-                        file to display them on screen. It's always on a good
-                        note to have a handy application like this one!
+                        Welcome to my simple note-taking application! This tool
+                        allows you to write and save notes using Express.js on
+                        the back end to store and retrieve them from a JSON
+                        file. Whether you need to jot down ideas, create to-do
+                        lists, or just keep track of important information, this
+                        application is an essential tool to have on hand. Thanks
+                        for using it!
                       </p>
                       <a
                         href="https://tye-note-taker.herokuapp.com/"
@@ -843,10 +884,13 @@ function Portfolio() {
                       <h3>JavaScript, HTML/CSS</h3>
                       <hr />
                       <p>
-                        This is a simple complete random password generator that
-                        can generate any password length between 8 and 128. You
-                        can choose between having lowercase, uppercase, numbers
-                        and even have special characters in your password!
+                        Welcome to my complete random password generator! With
+                        this tool, you can generate a password of any length
+                        between 8 and 128 characters. You can customize your
+                        password by choosing to include lowercase letters,
+                        uppercase letters, numbers, and special characters.
+                        Simply select your desired options and let the generator
+                        create a secure and unique password for you.
                       </p>
                       <a
                         href="https://tyestanley.github.io/password-generator"
